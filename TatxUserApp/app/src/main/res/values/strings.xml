@@ -1,0 +1,318 @@
+<resources>
+    <string name="app_name">TATX</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <!--285484011792937-->
+    <string name="save">Save</string>
+
+    <string name="saving_image">Saving image</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+    <string name="fare_details">Fare Details</string>
+    <string name="basefare">Base Fare</string>
+    <string name="maxsize">Max Size</string>
+    <string name="per_km">Per KM</string>
+    <string name="min_fare">Min Fare</string>
+    <!-- Registration Text  -->
+    <string name="registration">Registration</string>
+    <string name="signupvth">sign up with</string>
+    <string name="signup">Sign Up</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="email">Email</string>
+    <string name="countrycode">+91  </string>
+    <string name="ph">Phone Number</string>
+    <string name="pwd">Password</string>
+    <string name="terms"><u>Terms</u></string>
+
+    <!-- Signup Signin Text  -->
+    <string name="signupmain">SIGN UP</string>
+    <string name="signin">SIGN IN</string>
+
+    <!-- Login Text  -->
+    <string name="login">Login</string>
+    <string name="emaillogin">Mobile number or Email-ID </string>
+    <string name="pwdlogin">Password</string>
+    <string name="signinlogin">SIGN IN</string>
+    <string name="frpwd">FORGOT PASSWORD ?</string>
+
+    <!-- ForgotPassword Text  -->
+    <string name="emailph">Enter Email id</string>
+    <string name="submit">Submit</string>
+    <string name="use_this_promo_code">USE THIS PROMO CODE</string>
+
+    <string name="hint_language">Language</string>
+
+    <!-- AboutActivity Text  -->
+    <string name="about">About TATX</string>
+    <string name="visit">visit Tatx.com Website</string>
+    <string name="version">App version Informations</string>
+    <string name="termsc">Terms &amp; Conditions</string>
+    <string name="rate">Rate us on Google Store</string>
+
+    <!-- Account Text  -->
+    <string name="accounts">Accounts</string>
+    <string name="sar">SAR</string>
+
+    <!-- Newl Text  -->
+
+    <!-- capture_image Text  -->
+
+    <!-- country_code Text  -->
+    <string name="cancel">Cancel</string>
+
+    <!-- creditbal Text  -->
+    Profile
+
+    <!-- Display_Profile_Activity Text  -->
+    <string name="offers">Offers</string>
+    <string name="edit">Edit</string>
+    <string name="edit_pro">Edit Profile</string>
+    <string name="cash">CASH</string>order
+    <string name="order">Order</string>
+
+    <!-- Feedback Text  -->
+    <string name="feedback">Feedback</string>
+    <string name="feedbackform">FeedBack Form</string>
+    <string name="tatx_contact_info">Tatx Contact Information</string>
+    <string name="email_info">Email : help@tatx.com.com,\n \nPhone: +966920006168</string>
+    <string name="p.p.box">P.O.Box 85958,Riyadh 11612,K.S.A</string>Help
+
+    <!-- HelpActivity Text  -->
+    <string name="help">Help</string>
+    <string name="tatx_for_help">Tatx for help</string>
+
+    <!-- Locations Text  -->
+    <string name="locations">Locations</string>
+
+    <string name="addlocation">Add Location</string>
+
+    <!-- Loyalti Points Text  -->
+    <string name="loyalti_points">Loyalty Points</string>
+    <string name="tatx_id"> TATX ID</string>
+    <string name="redeem_points"> Redeem points</string>
+    <string name="your_points"> Your points</string>
+    <string name="clas">Class</string>points
+    <string name="points">Points</string>
+
+    <!-- Loyalti Points Text  -->
+
+    <!-- Select payments Text  -->
+    <string name="select_payments">Select payments</string>
+    <string name="add_creditcard">Add Credit Card</string>
+
+    <!-- Shareandarn Text  -->
+    <string name="shareearn">Share &amp; Earn</string>
+    <string name="shareurcode">SHARE YOUR CODE</string>
+
+    <!-- Shareandarn Text  -->
+    <string name="verify">Verification</string>
+
+
+    <string name="tripdetails">Trip Details</string>
+    <string name="trip_history">Trip History</string>
+
+    <string name="creditbaltr">Credit Balance Transactions</string>
+
+    <string name="billno">Bill No :41152252</string>
+    <string name="creditbaldate">Date :17/05/2016</string>
+    <string name="trno">5588552</string>
+    <string name="sarno">24.30</string>
+
+    <string name="rtdriver">Rate Driver</string>
+    <string name="invoice">Invoice</string>
+    <string name="farestimate">Fare Estimate</string>
+    <string name="share">Share</string>
+    <string name="nofnfdat">No Data found</string>
+    <string name="requesting">Requesting....</string>
+
+    <string name="credit_card">CREDIT CARD</string>
+    <string name="my_balance">TATX BALANCE</string>
+    <string name="confi_order">CONFIRM ORDER</string>
+
+    <string name="facebook_app_id">1713114058963619</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="verify1">Verify</string>
+    <string name="profile">Profile</string>
+    <string name="account">Account</string>
+    <string name="notifications">Notifications</string>
+    <string name="share_n_earn">Share &amp; Earn</string>
+    <string name="logout">Logout</string>
+    <string name="login_with">Login With</string>
+    <string name="payment_type">Preferred Payment Method</string>
+    <string name="add_credit_balance">Add Credit Balance</string>
+    <string name="enter_amount_to_add">Enter Amount to ADD</string>
+    <string name="buy">Buy</string>
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="credit_card_number">Credit Card Number</string>
+    <string name="saved_locations">Saved Locations</string>
+    <string name="recent_locations">Recent Locations</string>
+    <string name="choose_a_starting_point">Choose a starting point...</string>
+    <string name="redeem_loyalty">Redeem Loyalty</string>
+    <string name="enter_points_to_redeem">Enter Points to Redeem</string>
+    <string name="redeem">Redeem</string>
+    <string name="email_or_phone_number">Email (or) Phone Number</string>
+    <string name="enter_amount_to_credit">Enter Amount to Credit</string>
+    <string name="transfer">Transfer</string>
+    <string name="enter_location_name">Enter Location Name</string>
+    <string name="credits">Credits</string>
+    <string name="select_payment_type">SELECT PAYMENT Method</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="distance">Distance</string>
+    <string name="duration">Duration</string>
+    <string name="base_fare">Base Fare</string>
+    <string name="distance_fare">Distance Fare</string>
+    <string name="duration_fare">Duration Fare</string>
+    <string name="sub_total">Sub-Total</string>
+    <string name="tip_proper">Tip</string>
+    <string name="round_down">Round down</string>
+    <string name="total_fare">Total fare</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="please_enter_veryfication">Please enter your verification code that was sent to your mobile no</string>
+    <string name="sorry_for_delay">SORRY FOR THE DELAY</string>
+    <string name="internet_error">NOT CONNECTED TO THE INTERNET. PLEASE CHECK YOUR CONNECTION AND TRY AGAIN.</string>
+    <string name="copy">COPY</string>
+
+
+    <string name="product_name">Product Name</string>
+    <string name="txt_image_slider">Image Slideshow</string>
+    <string name="emerency_contact">EMERGENCY CONTACTS</string>
+    <string name="per_min">Per Min</string>
+    <string name="add_balance">Add Balance</string>
+    <string name="type_your_emergency_name">Type Your Emergency Name</string>
+    <string name="type_your_emergency_number">Type Your Emergency Number</string>
+    <string name="ok">OK</string>
+    <string name="select_location">Select Location</string>
+    <string name="add_location">Add Location</string>
+    <string name="en_route">En-Route</string>
+    <string name="on_trip">ON TRIP</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="adjustment">Adjustment</string>
+    <string name="discount">Discount</string>
+    <string name="rounded_down">Rounded Down</string>
+    <string name="change_password">Change Password</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="current_amount">Current Trip</string>
+    <string name="previous_amount">Pre. Adjustment</string>
+    <string name="call_driver">Call Driver</string>
+    <string name="message_driver">Message Driver</string>
+    <string name="are_sure_you">Are you sure you want to cancel?</string>
+    <string name="referral_code">Referral Code</string>
+    <string name="learn_more">Learn More</string>
+    <string name="people">People</string>
+    <string name="view_profile">View Profile</string>
+    <string name="tatx_balance">TATX BALANCE</string>
+    <string name="contact">Contact</string>
+    <string name="km">Km</string>
+    <string name="min">min</string>
+    <string name="transfer_balance_to_tatx_customer">Transfer balance to TATX customer</string>
+    <string name="please_enter_your_concern">Please enter your concern</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="promo_code_already_used">Promo code Already used</string>
+    <string name="promo_code_validated_successfully">Promo Code Successfully added to The Current Trip</string>
+    <string name="add_promo">ADD\nPROMO</string>
+    <string name="please_enter_promo_code">Please Enter Promo Code</string>
+    <string name="invalid_promo_code">Invalid Promo Code</string>
+    <string name="add_promo_code">Add Promo Code</string>
+    <string name="slide_up_to_view">SLIDE UP TO VIEW OPTIONS</string>
+    <string name="choose_destination">Choose a destination...</string>
+    <string name="why_did_you_cancel">Why did you cancel?</string>
+    <string name="please_enter_all_fields">Please Enter All Fields</string>
+    <string name="invalid_credit_card_number">Invalid Credit Card Number</string>
+    <string name="invalid_month">Invalid Month</string>
+    <string name="invalid_year">Invalid Year</string>
+    <string name="invalid_cvv">Invalid CVV</string>
+    <string name="please_enter_card_holder_name">Please Enter Card Holder Name</string>
+    <string name="scan">SCAN</string>
+    <string name="go_to_pin">Go To Pin</string>
+    <string name="no_cards_were_added">No Cards were Added</string>
+    <string name="error_contacting_the_gateway">Error contacting the gateway.</string>
+    <string name="invalid_card_details">Invalid Card Details</string>
+    <string name="please_enter_amount">Please Enter Amount</string>
+    <string name="no_card_was_added_please_add_card_and_try_again">No card was added. Please Add Card and Try Again.</string>
+    <string name="no_primary_card_available_please">No Primary Card Available. Please Set Primary Card and Try Again.</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="please_choose_starting_point">Please choose a starting point</string>
+    <string name="please_choose_destination">Please choose a destination</string>
+    <string name="something_went_wrong_try_again">Something went wrong, Try again</string>
+    <string name="cancellation_charges_may_apply_do_you_want_to_continue">Cancellation Charges may Apply. Do You Want to Continue...?</string>
+    <string name="please_enter_location_name">Please enter location name</string>
+    <string name="sorry">Sorry !</string>
+    <string name="you_are_on_trip">You are on trip</string>
+    <string name="trip_cancelled">Trip Cancelled</string>
+    <string name="you_request_is_under_process">You request is under process</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="please_enter_new_password">Please enter new password</string>
+    <string name="please_confirm_new_password">Please confirm new password</string>
+    <string name="mismatch_password">Mismatch password</string>
+    <string name="please_enter_minimum_5_character">Please Enter minimum 5 character</string>
+    <string name="please_enter_email_or_mobile_no">Please enter email OR mobile no</string>
+    <string name="no_result_for">No result for</string>
+    <string name="please_enter_address">Please enter address</string>
+    <string name="please_choose_source">Please Choose Source</string>
+    <string name="invalid_destination">Invalid destination..</string>
+    <string name="the_destination_entered_is_outside_our_coverage_area">The destination entered is outside our coverage area</string>
+    <string name="No_cab_found_please_try_after_some_time">No cab found please try after some time</string>
+    <string name="please_select_destination">Please select destination</string>
+    <string name="please_add_card_to_process_do_you_want_to_add_credit_card">Please Add Card to process.  Do You Want to Add Credit Card ?</string>
+    <string name="insufficient_tatx_balance">Insufficient TATX Balance</string>
+    <string name="please_add_tatx_balance_to_process_do_you_want_to_add_tatx_balance">Please Add TATX Balance to process.  Do You Want to Add TATX Balance ?</string>
+    <string name="please_rate_first">Please rate first</string>
+    <string name="please_enter_emailid">Please enter EmailId</string>
+    <string name="please_enter_password_minimum_6_digits">Please enter Password minimum 6-digits</string>
+    <string name="please_enter_points_to_redeem">Please Enter Points to Redeem</string>
+    <string name="please_enter_first_name">Please enter First Name</string>
+    <string name="please_enter_last_name">Please enter Last Name</string>
+    <string name="please_enter_mobile_number">Please enter Mobile Number</string>
+    <string name="please_enter_valid_mobile_number">Please enter Valid Mobile Number</string>
+    <string name="please_accept_terms_and_conditions"><![CDATA[<font color=\'red\'>Please accept terms and conditions</font>]]></string>
+    <string name="email_id_and_phone_number_already_exists">Email ID and Phone Number Already Exists.</string>
+    <string name="email_id_already_exists">Email ID Already Exists.</string>
+    <string name="phone_number_already_exists">Phone Number Already Exists</string>
+    <string name="invalid_referral_code">Invalid Referral Code</string>
+    <string name="reg_id_creation_failed">Server is busy please try again after a while</string>
+    <string name="a_new_update_is_available">A New Update is Available</string>
+    <string name="update">Update</string>
+    <string name="invalid_otp">Invalid OTP</string>
+    <string name="please_enter_4_digit_otp">Please enter 4 digit OTP</string>
+    <string name="please_enter_sender_details">Please Enter Sender Details</string>
+    <string name="please_enter_amount_to_credit">Please Enter Amount to Credit</string>
+    <string name="do_you_want_to_delete_this_card">Do You Want to Delete this Card ?</string>
+    <string name="please_enter_minimum_5_characters">Please enter minimum 5 characters</string>
+    <string name="share_and_earn">Share and Earn</string>
+    <string name="share_via">Share via</string>
+    <string name="download_now_and_use_promo_code">Download Now and use promo code \"</string>
+    <string name="_to_get">\" to get</string>
+    <string name="rides_free">Rides free</string>
+    <string name="or">OR</string>
+    <string name="reason_for_cancel">Reason for Cancel</string>
+    <string name="please_give_rating">Please give rating.</string>
+    <string name="enter_your_reason">Enter your reason</string>
+    <string name="my_reason_is_not_listed">My reason isn\'t listed</string>
+    <string name="do_you_want_to_exit">Do You Want to Exit ?</string>
+    <string name="your_credit_card_will_be_changed">Your credit card will be charged</string>
+    <string name="for_verification_purposes_and_will_be_automatically_refunded">for verification purposes and will be automatically added to your tatx balance.</string>
+    <string name="all_your_information_is_safe_and_secured">All your information is safe and secured.</string>
+    <string name="request_when_you_are_ready">Order when your ready, your driver will pick you up at Arrivals</string>
+    <string name="location_name">Location Name</string>
+    <string name="already_exist">already exist</string>
+    <string name="you_already_added_two_loc">You already added two location, So please delete or edit location</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="delete_location">Delete Location</string>
+    <string name="edit_location">Edit Location</string>
+    <string name="apply">Apply</string>
+    <string name="driver_acknowledge_your_changed_destination_location">Driver acknowledge your changed destination location</string>
+    <string name="download_now">Download now</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="i_accept_the_terms">I accept the terms</string>
+    <string name="no_push_notifications_available">No Push Notifications Available</string>
+    <string name="copied">Copied</string>
+    <string name="as_of_now_this_feature_is_not_available">Payment through card is not available at the moment</string>
+
+
+</resources>

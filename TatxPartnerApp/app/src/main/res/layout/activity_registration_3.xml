@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:orientation="vertical">
+<!--
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    style="@style/TextView"
+                    android:text="@string/selectpic"
+                    android:textColor="@color/headerColor"
+                    android:singleLine="false"/>
+
+                <ImageView
+                    android:id="@+id/car_picture"
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/google_search_background"
+                    android:scaleType="fitXY"
+                    android:padding="@dimen/_2sdp"
+
+                    />-->
+
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    style="@style/TextView"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/selectlicence"
+                    android:textColor="@color/headerColor"
+                    android:singleLine="false"/>
+
+                <ImageView
+                    android:id="@+id/licence_picture"
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/google_search_background"
+                    android:scaleType="fitXY"
+                    android:padding="@dimen/_2sdp"
+                    />
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/selectinsurance"
+                    android:textColor="@color/headerColor"
+                    android:singleLine="false"/>
+
+                <ImageView
+                    android:id="@+id/insurance_picture"
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/google_search_background"
+
+                    android:scaleType="fitXY"
+                    android:padding="@dimen/_2sdp"
+                    />
+
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    style="@style/TextView"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/selectiqama"
+                    android:textColor="@color/headerColor"
+                    android:singleLine="false"/>
+
+                <ImageView
+                    android:id="@+id/img_iqama"
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/google_search_background"
+                    android:scaleType="fitXY"
+                    android:padding="@dimen/_2sdp"
+                    />
+
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    style="@style/TextView"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/selectregpic"
+                    android:textColor="@color/headerColor"
+                    android:singleLine="false"/>
+
+                <ImageView
+                    android:id="@+id/reg_picture"
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/google_search_background"
+                    android:scaleType="fitXY"
+                    android:padding="@dimen/_2sdp"
+                    />
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    style="@style/TextView"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/selectiban_bank"
+                    android:textColor="@color/headerColor"
+                    android:singleLine="false"/>
+
+                <ImageView
+                    android:id="@+id/img_ibanBankCard"
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/google_search_background"
+                    android:scaleType="fitXY"
+                    android:padding="@dimen/_2sdp"
+                    />
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    android:id="@+id/ctv_authorityToDriveCar"
+                    style="@style/TextView"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/select_authority"
+                    android:textColor="@color/headerColor"
+                    android:singleLine="false"/>
+
+                <ImageView
+                    android:id="@+id/img_authorityToDriveCar"
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/google_search_background"
+                    android:scaleType="fitXY"
+                    android:padding="@dimen/_2sdp"
+                    />
+
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    android:id="@+id/ctv_emp_type_header"
+                    style="@style/TextView"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/select_authority"
+                    android:textColor="@color/headerColor"
+                    android:singleLine="false"/>
+
+                <ImageView
+                    android:id="@+id/iv_emp_type_document"
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/google_search_background"
+                    android:scaleType="fitXY"
+                    android:padding="@dimen/_2sdp"
+                    />
+
+                <com.tatx.partnerapp.customviews.CustomRippleView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actionbar"
+                    android:layout_marginLeft="@dimen/sp70"
+                    android:layout_marginRight="@dimen/sp70"
+                    android:layout_marginTop="@dimen/sp30"
+                    android:layout_marginBottom="@dimen/sp25"
+                    >
+                    <Button
+                        android:id="@+id/reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/feedback_form_background"
+                        android:textAllCaps="false"
+                        android:text="@string/submit"
+                        android:textSize="@dimen/sp20"
+                        android:textColor="#ff00"
+                         />
+                </com.tatx.partnerapp.customviews.CustomRippleView>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

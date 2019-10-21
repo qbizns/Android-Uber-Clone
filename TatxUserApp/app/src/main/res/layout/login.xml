@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <include layout="@layout/layout_title"/>
+    <!--</RelativeLayout>-->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/loginlogo" />
+
+            <LinearLayout
+                android:id="@+id/emailpwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.tatx.userapp.customviews.CustomEditText
+                        android:id="@+id/et_email"
+                        style="@style/RoundedCornerEditText"
+                        android:layout_weight="1"
+                        android:hint="@string/emaillogin"
+                        android:digits="0,1,2,3,4,5,6,7,8,9,@,.,_,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"/>
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/tv_country_code"
+                        style="@style/TextView"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/edit_text_background"
+                        android:drawablePadding="@dimen/_6sdp"
+                        android:drawableRight="@drawable/picker24"
+                        android:gravity="center"
+                        android:text="@string/countrycode"
+                        android:layout_marginLeft="@dimen/_6sdp"
+                        android:visibility="gone"
+                        android:paddingLeft="@dimen/_6sdp"/>
+                </LinearLayout>
+
+
+                <com.tatx.userapp.customviews.CustomEditText
+                    android:id="@+id/et_password"
+                    style="@style/RoundedCornerEditText"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="@string/pwdlogin"
+                    android:inputType="textPassword"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,*,@,#,%,$,_,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                    />
+            </LinearLayout>
+
+            <com.tatx.userapp.customviews.CustomRippleView
+                android:id="@+id/ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailpwd"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                >
+
+                <Button
+                    android:id="@+id/submit_btn"
+                    style="@style/AppThemeButton"
+                    android:text="@string/signinlogin"
+                    />
+            </com.tatx.userapp.customviews.CustomRippleView>
+
+            <com.tatx.userapp.customviews.CustomTextView
+                android:id="@+id/forgetpwd"
+                style="@style/TextView10"
+                android:layout_below="@+id/ll"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/frpwd"
+                />
+
+            <com.tatx.userapp.customviews.CustomTextView
+                android:id="@+id/signupwith"
+                style="@style/TextView12"
+                android:layout_below="@+id/forgetpwd"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/login_with"
+                 />
+
+            <LinearLayout
+                android:id="@+id/social"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signupwith"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="loginWithTwitterFunctionality"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/twitter" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="loginWithFacebookFunctionality"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/facebook" />
+
+
+                <ImageView
+                    android:id="@+id/iv_gp_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="loginWithGooglePlusFunctionality"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/google_plus" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

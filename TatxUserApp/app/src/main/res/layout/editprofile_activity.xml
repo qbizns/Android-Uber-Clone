@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_title" />
+
+        <com.tatx.userapp.customviews.CustomTextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingLeft="@dimen/_25sdp"
+            android:paddingRight="@dimen/_25sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="@string/save"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/hide_keyboard_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_25sdp"
+            android:paddingRight="@dimen/_25sdp">
+
+            <com.tatx.userapp.customviews.CustomTextView
+                style="@style/TextView10"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/tatx_id" />
+
+            <com.tatx.userapp.customviews.CustomTextView
+                android:id="@+id/tv_tatx_id"
+                style="@style/TextView12"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="dfsdfg"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <com.tatx.userapp.commonutills.CircularImageViewWithBoarder
+                android:id="@+id/profileImgView"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/edprofile" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/AppThemeTextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
+
+                        <com.tatx.userapp.customviews.CustomEditText
+                            android:id="@+id/first_name"
+                            style="@style/RoundedCornerEditText"
+                            android:digits=".,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                            android:hint="@string/firstname" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="match_parent" />
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/AppThemeTextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
+
+                        <com.tatx.userapp.customviews.CustomEditText
+                            android:id="@+id/last_name"
+                            style="@style/RoundedCornerEditText"
+                            android:digits=".,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                            android:hint="@string/lastname" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                        <com.tatx.userapp.customviews.CustomTextView
+                            android:id="@+id/et_email"
+                            style="@style/RoundedCornerEditText"
+                            android:layout_width="match_parent"
+
+                            android:hint="@string/email" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/AppThemeTextInputLayout"
+                        android:layout_width="fill_parent">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_13sdp"
+                            android:background="@drawable/edit_text_background"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/_5sdp">
+
+
+                            <LinearLayout
+                                android:id="@+id/cardview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:background="@android:color/transparent"
+                                android:gravity="center_vertical"
+
+                                >
+
+                                <ImageView
+                                    android:id="@+id/flag_image"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:scaleType="fitXY"
+
+                                    />
+
+                                <com.tatx.userapp.customviews.CustomTextView
+                                    android:id="@+id/tv_country_code"
+                                    style="@style/TextView12"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:background="@android:color/transparent"
+
+                                    />
+
+                            </LinearLayout>
+
+
+                            <com.tatx.userapp.customviews.CustomTextView
+                                android:id="@+id/phone_number"
+                                style="@style/RoundedCornerEditText"
+                                android:layout_width="match_parent"
+                                android:background="@android:color/transparent"
+                                android:hint="@string/ph" />
+
+
+                        </LinearLayout>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/spinner_language"
+                        style="@style/Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_13sdp"
+                        android:hint="@string/hint_language" />
+
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:text="@string/emerency_contact"
+                        android:textStyle="bold" />
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/AppThemeTextInputLayout"
+                        android:layout_marginTop="@dimen/_13sdp">
+
+                        <com.tatx.userapp.customviews.CustomEditText
+                            android:id="@+id/ctv_emergency_name"
+                            style="@style/RoundedCornerEditText"
+                            android:layout_width="match_parent"
+
+                            android:digits="., ,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                            android:hint="@string/type_your_emergency_name" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_13sdp"
+                        android:background="@drawable/edit_text_background"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_emergency_country_code_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+
+                            >
+
+                            <ImageView
+                                android:id="@+id/iv_emergency_contact_flag"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_gravity="left|center_vertical"
+                                android:scaleType="fitXY"
+
+                                />
+
+                            <com.tatx.userapp.customviews.CustomTextView
+                                android:id="@+id/ctv_emergency_country_code"
+                                style="@style/TextView12"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:background="@android:color/transparent"
+
+                                />
+                        </LinearLayout>
+
+                        <com.tatx.userapp.customviews.CustomEditText
+                            android:id="@+id/ctv_emergency_phone_number"
+                            style="@style/RoundedCornerEditText"
+                            android:layout_width="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/type_your_emergency_number"
+                            android:inputType="number"
+                            android:maxLength="10"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/sv_mc_bottom_margin_view" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

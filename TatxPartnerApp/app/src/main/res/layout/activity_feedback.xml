@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+<include layout="@layout/layout_title"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp">
+
+        <com.tatx.partnerapp.customviews.CustomTextView
+            android:id="@+id/suggestions"
+            style="@style/TextView12"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:text="@string/suggestions"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:background="@drawable/line"
+
+            />
+
+        <com.tatx.partnerapp.customviews.CustomTextView
+            android:id="@+id/complaints"
+            style="@style/TextView12"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:text="@string/complaints"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:background="@drawable/line"
+
+            />
+
+        <com.tatx.partnerapp.customviews.CustomTextView
+            android:id="@+id/btn_contact"
+            style="@style/TextView12"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:text="@string/contact_us"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:background="@drawable/line"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

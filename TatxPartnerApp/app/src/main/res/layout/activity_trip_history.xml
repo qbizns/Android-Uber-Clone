@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+     <include layout="@layout/layout_title"/>
+
+    <com.tatx.partnerapp.customviews.CustomTextView
+        android:id="@+id/recordnotfnd"
+        style="@style/TextView15"
+        android:text="@string/no_trip_found"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/saved_location_recycler_view_triphistory"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

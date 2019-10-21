@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_title" />
+
+        <ImageView
+            android:id="@+id/add_locations"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center"
+           android:src="@drawable/add_location"
+            android:layout_marginRight="@dimen/_5sdp"
+            />
+
+    </FrameLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:id="@+id/hide_keyboard_layout"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/savedloc"
+            android:layout_width="wrap_content"
+            android:textAllCaps="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/saved_locations"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/divider"
+            android:layout_below="@+id/savedloc"
+            />
+        <com.tatx.userapp.customviews.CustomTextView
+            android:id="@+id/recordnotfnd"
+            style="@style/TextView12"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/nofnfdat"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_below="@id/savedloc"
+           />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/saved_location_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/savedloc"
+            android:layout_gravity="center"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/recentloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saved_location_recycler_view"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/recent_locations"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/divider"
+            android:layout_below="@+id/recentloc"
+            />
+        <com.tatx.userapp.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:text="@string/nofnfdat"
+            android:textSize="@dimen/_20sdp"
+            android:layout_below="@id/savedloc"
+            android:layout_above="@id/saved_location_recycler_view"
+             />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recent_location_recycler_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/recentloc"
+           >
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</LinearLayout>

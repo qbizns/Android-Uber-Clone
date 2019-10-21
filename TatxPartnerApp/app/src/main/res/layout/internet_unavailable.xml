@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+   >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:layout_marginRight="@dimen/_15sdp"
+    android:gravity="center">
+        <com.tatx.partnerapp.customviews.CustomTextView
+            android:id="@+id/website"
+            style="@style/TextView12"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:linksClickable="false"
+            android:onClick="onUrlClick"
+            android:padding="@dimen/_5sdp"
+            android:textStyle="bold"
+            android:text="@string/sorry_for_delay" />
+
+
+        <com.tatx.partnerapp.customviews.CustomTextView
+            android:id="@+id/rateongoogleplay"
+            style="@style/TextView"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/internet_error"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:singleLine="false"
+            />
+
+</LinearLayout>
+</LinearLayout>

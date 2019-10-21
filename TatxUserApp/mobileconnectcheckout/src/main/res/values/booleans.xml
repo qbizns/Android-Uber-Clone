@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="connect_checkout_show_toasts">false</bool>
+
+</resources>

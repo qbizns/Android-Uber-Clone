@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ratingll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/google_search_background"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_6sdp"
+                android:weightSum="2">
+
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    android:id="@+id/current_rating"
+                    style="@style/TextView"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/edit_text_boarder" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    android:numStars="1" />
+
+
+            </LinearLayout>
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/crntrt"
+                style="@style/TextView"
+                android:layout_below="@id/ratingll"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:text="@string/yrrating" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/crntrt"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/google_search_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_6sdp">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/lifetimetrips"
+                        style="@style/TextView15"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/TextView"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="@string/lifetimetips" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_minus1sdp"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:background="@drawable/google_search_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_6sdp">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/ratedtrips"
+                        style="@style/TextView15"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/ratedtrips" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_minus1sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/google_search_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_6sdp">
+
+                    <TextView
+                        android:id="@+id/stars"
+                        style="@style/TextView15"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/TextView"
+                        android:text="@string/stars" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

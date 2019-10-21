@@ -1,0 +1,330 @@
+
+<resources>
+    <string name="app_name">تاتِكس للسائق</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="saving_image">Saving image</string>
+    <string name="preparing_card">Preparing card</string>
+
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+
+    <!-- Registration Text  -->
+    <string name="reg"> السائق تسجيل</string>
+
+    <string name="firstname">الأسم الأول</string>
+    <string name="lastname">الأسم الأخير</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="countrycode">+91  </string>
+    <string name="ph">رقم الجوال</string>
+    <string name="pwd">كلمة المرور</string>
+    <string name="city">اختر المدينة</string>
+    <string name="selectlicence">ارفع رخصة القيادة</string>
+    <string name="selectregpic">اختر أو التقط رخصة السيارة</string>
+    <string name="register">تسجيل</string>
+    <string name="terms">الشروط</string>
+
+
+    <!-- Signup Signin Text  -->
+    <string name="signupmain">كن سائقاً</string>
+    <string name="signin">تسجيل دخول</string>
+
+    <!-- Login Text  -->
+    <string name="login">تسجيل دخول</string>
+    <string name="emaillogin">الإيميل أو رقم الجوال</string>
+    <string name="pwdlogin">كلمة المرور</string>
+
+    <string name="frpwd">نسيت اسم المستخدم أو كلمة المرور</string>
+
+    <string name="rating">التقييم: </string>
+    <string name="profile_driver">ملف السائق</string>
+    <string name="supensions">عدد الايقافات</string>
+    <string name="earnings">الإيرادات</string>
+    <string name="start_date">تاريخ البدء</string>
+    <string name="avg_rating">معدل التقييم</string>
+    <string name="avg_acceptance_rate">معدل قبول الرحلات</string>
+    <string name="avg_earnings_day">معدل الإيراد اليومي</string>
+    <string name="yrrating">التقييم الحالي</string>
+    <string name="ratedtrips">قيّم الرحلة</string>
+    <string name="documents">المستندات</string>
+    <string name="bonus">المكافئات</string>
+    <string name="performance_analytics">تحليل الأداء</string>
+    <string name="details">التفاصيل</string>
+
+    <!-- ForgotPassword Text  -->
+
+    <string name="status">الحالة</string>
+    <string name="distance">المسافة</string>
+    <string name="payment_method">طريقة الدفع</string>
+    <string name="suggestions">اقتراحات</string>
+    <string name="complaints">شكاوي</string>
+    <string name="submit">تأكيد</string>
+
+    <string name="contact_us">راسلنا</string>
+    <string name="forgotpwd">نسيت كلمة المرور؟</string>
+    <string name="notify">التنبيهات</string>
+
+    <!-- AboutActivity Text  -->
+    <string name="about">عنّ تاتِكس</string>
+    <string name="visit">Visit Tatx.com Website</string>
+    <string name="version">App Version Information</string>
+    <string name="termsc">سياسة وشروط الاستدام</string>
+    <string name="rate">قيمنا على قوقل بلاي</string>
+    <string name="sar">ر.س </string>
+
+    <!-- capture_image Text  -->
+    <string name="camera">الكاميرا</string>
+    <string name="gal">الاستديو</string>
+
+    <!-- country_code Text  -->
+    <string name="cancel">إلغاء</string>
+
+    <!-- Feedback Text  -->
+    <string name="feedback">المقترحات</string>
+    <string name="feedbackform">نموذج التعقيب</string>
+    <string name="tatx_contact_info">Tatx Contact Information</string>
+    <string name="email_info">Email : info@tatx.com, Phone: +966920006168</string>
+    <string name="p.p.box">P.O.Box 85958, Riyadh 11612, K.S.A</string>
+
+    <!-- HelpActivity Text  -->
+    <string name="help">مساعدة</string>
+    <string name="tatx_for_help">تاتكس مساعدة</string>
+    <string name="invite">دعوة الأصدقاء</string>
+    <string name="share">مشاركة</string>
+
+    <string name="time">الوقت</string>
+    <!-- Locations Text  -->
+
+    <!-- Shareandarn Text  -->
+    <string name="verify"> تحقق</string>
+
+    <string name="tripdetails">تفاصيل الرحلة</string>
+    <string name="trip_history">أرشيف الرحلات</string>
+    <string name="navigate">أنتقل</string>
+
+    <string name="rtdriver">تققيم الراكب</string>
+    <string name="invoice">الفاتورة</string>
+
+    <string name="nofnfdat">لا يوجد مدخلات</string>
+
+
+    <string name="go_offline">كن غير متصل</string>
+    <string name="go_online">كن متصل</string>
+    <string name="pickup_customer">استقبل العميل</string>
+    <string name="start_trip">ابدأ الرحلة</string>
+    <string name="complete_trip">أتمّ الرحلة</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="sorry_for_delay">نأسف للتأخير</string>
+    <string name="internet_error">يرجى التأكد من اتصالك بالخدمة والمحاولة مجددا غير متصل بالإنترنت.</string>
+    <string name="verification_code">فضلاً أدخل رمز التحقق المرسل إلى جوالك</string>
+    <string name="view_profile">استعرض ملفك</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="edit">تعديل</string>
+    <string name="save">حفظ</string>
+    <string name="last_trip">الرحلة الأخيرة </string>
+    <string name="accept_ride">قبول الرحلة</string>
+    <string name="decline_ride">رفض الرحلة</string>
+    <string name="payment_type">طريقة الدفع :</string>
+    <string name="discount">تخفيض</string>
+    <string name="adjustments">المبالغ السابقة</string>
+    <string name="cash_to_collect">المبلغ</string>
+    <string name="duration">المدة</string>
+    <string name="total_amount">المبلغ الإجمالي</string>
+    <string name="current_amount">الرحلة الحالية</string>
+    <string name="previous_amount">المبالغ السابقة</string>
+    <string name="confirm_new_password">تأكيد كلمة السر</string>
+    <string name="dob">تاريخ الميلاد</string>
+    <string name="iqama_number">رقم الهوية/الإقامة</string>
+    <string name="iqama_license_expiry_date">تاريخ انتهاء الهوية/الإقامة</string>
+    <string name="insurance_expiry_date">تاريخ انتهاء التأمين</string>
+    <string name="car_year">سنة الصنع</string>
+    <string name="authority_to_drive">تفويض بقيادة المركبة في حال عدم امتلاك السائق للمركبة</string>
+    <string name="iban_number">رقم الآيبان</string>
+    <string name="bank_country">دولة البنك</string>
+    <string name="insurance_number">رقم التأمين</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="confirm_account_no">تأكيد رقم حساب البنك</string>
+    <string name="ifsc_code">رقم السويفت كود</string>
+    <string name="choose_country">اختر دولة</string>
+    <string name="bank_name">اسم البنك</string>
+    <string name="add_bank_account">اضافة حساب بنكي</string>
+    <string name="address">العنوان</string>
+    <string name="add_vehicles">إضافة مركبة</string>
+    <string name="vehicle">المركبات</string>
+    <string name="add_vehicle">إضافة\n مركبة</string>
+    <string name="selectiban_bank">ارفع كرت الحساب البنكي</string>
+    <string name="select_authority">رفع صورة تفويض قيادة المركبة</string>
+    <string name="my_vehicles">مركباتي</string>
+    <string name="payments">الأرباح</string>
+    <string name="amount_due">المبلغ المطلوب</string>
+    <string name="last_paid">آخر عملية تحويل تمت في</string>
+    <string name="payment_history">سجل المدفوعات</string>
+    <string name="hint_language">اللغة</string>
+    <string name="why_did_you_cancel">لماذا قمت بإلغاء الطلب؟</string>
+    <string name="please_enter_bank_name">يرجى إدخال اسم البنك</string>
+    <string name="please_account_number">يرجى إدخل رقم الحساب</string>
+    <string name="please_enter_car_number">يرجى ادخال لوحة المركبة</string>
+    <string name="please_enter_registration_number">يرجى ادخال الرقم التسلسلي لرخصة السير (الاستمارة)</string>
+    <string name="please_enter_registration_expiry_date">تاريخ انتهاء رخصة السير</string>
+    <string name="please_select_car_make">اختر الشركة المصنّعة</string>
+    <string name="please_select_car_model">اختر طراز المركبة</string>
+    <string name="please_enter_car_color">اختر لون المركبة</string>
+    <string name="pick_image">اختر صورة</string>
+    <string name="please_select_car_make_first">يرجى اختيار الشركة المصنّعة</string>
+    <string name="please_wait">يرجى الانتظار</string>
+    <string name="please_enter_new_password">يرجى اختيار كلمة مرور جديدة</string>
+    <string name="please_confirm_new_password">يرجى تأكيد كلمة المرور الجديدة</string>
+    <string name="mismatch_password">كلمة المرور غير مطابقة</string>
+    <string name="please_enter_email_or_mobile_no">يرجى ادخال البريد الإلكتروني أو رقم المحمول</string>
+    <string name="image_crop_failed">فشل تعديل الصورة</string>
+    <string name="destination_details_are_not_available">تفاصيل الوجهة غير متوفرة</string>
+    <string name="sorry">عذراً</string>
+    <string name="please_choose_source">يرجى اختيار مكان الإقلال</string>
+    <string name="please_choose_destination">يرجى اختيار الوجهة</string>
+    <string name="please_enter_collected_amount">يرجى ادخال المبلغ المدفوع وتقييم العميل</string>
+    <string name="please_enter_collected_amount1">يرجى ادخال المبلغ المدفوع</string>
+    <string name="please_give_rating">يرجى التقييم</string>
+    <string name="please_rate_first">فضلا قيّم أولاً</string>
+    <string name="please_enter_valid_emailid_or_phone_number">يرجى ادخال بريد إلكتروني صحيح أو رقم محمول صحيح</string>
+    <string name="please_enter_password_minimum_6_digits">يرجى اختيار كلمة مرور لا تقل عن 6 خانات</string>
+    <string name="profile_photo">صورة العرض</string>
+    <string name="please_enter_first_name">يرجى إدخال الاسم الأول</string>
+    <string name="please_enter_last_name">يرجى أدخال اسم الأخير</string>
+    <string name="please_enter_emailid">يرجى ادخال البريد الإلكتروني</string>
+    <string name="please_enter_mobile_number">يرجى ادخال رقم المحمول</string>
+    <string name="please_enter_valid_mobile_number">يرجى ادخال رقم محمول صحيح</string>
+    <string name="email_id_and_phone_number_already_exists">البريد الإلكتروني و رقم المحمول قر تم استخدامهما من قبل</string>
+    <string name="email_id_already_exists">البريد الإلكتروني تم استخدامه من قبل</string>
+    <string name="phone_number_already_exists">رقم المحمول تم استخدامه من قبل</string>
+    <string name="google_play_services_are_not_available">خدمات قوقل بلاي غير متوفرة حاليا</string>
+    <string name="please_select_your_gender">يرجى اخيار الجنس</string>
+    <string name="please_enter_city_name">يرجى ادخال اسم المدينة</string>
+    <string name="please_enter_date_of_birth">يرجى ادخال تاريخ الميلاد</string>
+    <string name="please_select_country_name">يرجى اختيار بلدك</string>
+    <string name="please_enter_iqama_number">فضلاً أدخل رقم الإقامة بشكل صحيح</string>
+    <string name="please_enter_iqama_expiry_date">يرجى ادخال تاريخ انتهاء الهوية/الإقامة</string>
+    <string name="please_enter_insurance_expiry_date">يرجى ادخال تاريخ انتهاء التأمين</string>
+    <string name="please_enter_car_year_yyyy">يرجى ادخال سنة الصنع</string>
+    <string name="year_should_not_be_grater_than_current_year">سنة الصنع لا ينبغي أن تكون أكبر من السنة الحالية</string>
+    <string name="please_enter_iban_number">يرجى ادخال رقم حساب الآي بان</string>
+    <string name="please_select_country_of_residency_first">يرجى اختيار بلد الإقامة</string>
+    <string name="please_choose_valid_date">يرجى ادخال تاريخ صحيح</string>
+    <string name="your_gps_seems_to_be_disabled">نظام تحديد المواقع في هاتفك معطّل</string>
+    <string name="enable">تفعيل</string>
+    <string name="upload_police_clearance">رفع شهادة خلو السوابق</string>
+    <string name="upoad_employee_id_card">رفع بطاقة العمل لموظفين القطاع العام من السعوديين فقط</string>
+    <string name="file_should_not_be_more_than_2_mb">حجم الملف لا يجب أن يتجاوز 2 ميغا</string>
+    <string name="unable_to_fetch_image">تعثر تنزيل الصورة</string>
+    <string name="please_attach_drivers_license">يرجى رفع صورة رخصة القيادة</string>
+    <string name="please_attach_insurance_picture">يرجى رفع صورة التأمين</string>
+    <string name="please_attach_id_card">يرجى رفع الهوية الوطنية/الإقامة</string>
+    <string name="please_attach_vehicle_registration">يرجى رفع صورة رخصة سير المركبة (الاستمارة)</string>
+    <string name="please_attach_iban_bank_card_picture">يرجى رفع صورة كرت البنك برقم الآي بان</string>
+    <string name="reg_id_creation_failed">تعثر التسجيل. يرجى المحاولة لاحقاً</string>
+    <string name="a_new_update_is_available">تحديث جديد متوفر الآن</string>
+    <string name="update">تحديث</string>
+    <string name="invalid_otp">رمز خاطئ</string>
+    <string name="please_enter_4_digit_otp">يرجى ادخال الرمز المكوّن من 4 أرقام</string>
+    <string name="resend_code">إعادة إرسال الرمز</string>
+    <string name="this_device_doesn">نظام التشغيل في جهازك لا يدعم التطبيق</string>
+    <string name="please_enter_minimum_5_characters">يرجى إدخال ٥ خانات على الأقل</string>
+    <string name="trip_number">رقم الرحلة</string>
+    <string name="cash">نقداً</string>
+    <string name="base_fare">التعرفة الأساسية</string>
+    <string name="rounded_duration">Rounded Duration</string>
+    <string name="rounded_sub_total">تقريب السعر للأدنى</string>
+    <string name="total_fare">التكلفة الإجمالية</string>
+    <string name="sec">الثواني</string>
+    <string name="select_image">اختر صورة</string>
+    <string name="choose_file">اختر ملف</string>
+    <string name="driver_acceptance_rate">معدل القبول</string>
+    <string name="average_rating">معدل التقييم</string>
+    <string name="bonus_history">أرشيف المكافئات</string>
+    <string name="end_date">تاريخ الإنتهاء</string>
+    <string name="or">أو</string>
+    <string name="crop">حفظ</string>
+    <string name="orders_needed_to_reach_minimum">أنت بحاجة إلى 30 رحلة لتكون مؤهلاً للعلاوة</string>
+    <string name="stars_ratings_needed_to_reach_minimum">أنت بحاجة إلى 30 رحلة بتقييم 5 نجوم لتكون مؤهلاً للعلاوة</string>
+    <string name="hours_needed_to_reach_minimum">أنت بحاجة إلى 20 ساعة اتصال لتكون مؤهلاً للعلاوة</string>
+    <string name="verifyy">تحقق</string>
+    <string name="paid">مدفوع</string>
+    <string name="coming_soon">قريباً</string>
+    <string name="reason_for_cancel">سبب الإلغاء</string>
+    <string name="private1">قطاع خاص</string>
+    <string name="govt">قطاع حكومي</string>
+    <string name="vehicle_not_active">مركبتك غير مفعلة، يرجى التواصل مع خدمة عملاء تاتكس باختيار "مساعدة" من القائمة</string>
+    <string name="you_vehicle_is_not_active_please_contact_tatx_customer_care">مركبتك غير مفعّلة، يرجى التواصل مع خدمة عملاء تاتكس</string>
+    <string name="call">الاتصال</string>
+    <string name="message">رسالة </string>
+    <string name="driver_week_online_hours">عدد ساعات الاتصال خلال الاسبوع</string>
+    <string name="drive_peak_online_hours">عدد ساعات الاتصال خلال أوقات الذروة</string>
+    <string name="driver_week_total_trips">عدد الرحلات خلال الاسبوع</string>
+    <string name="enter_your_reason">وضّح السبب</string>
+    <string name="my_reason_is_not_listed">الأسباب غير مدرجة</string>
+    <string name="vehicle_plate_letters">حروف لوحة السيارة بالانجليزي</string>
+    <string name="vehicle_plate_number_in_eng">أرقام لوحة السيارة بالانجليزي</string>
+    <string name="selectinsurance">ارفع صورة التأمين</string>
+    <string name="selectiqama">ارفع صورة الهوية/الإقامة</string>
+    <string name="your_share">حصتك</string>
+    <string name="all_hours">ساعات الاتصال</string>
+    <string name="average_hours">متوسط ساعات الاتصال</string>
+    <string name="today_hours">ساعات الاتصال اليوم</string>
+    <string name="online_hours">ساعات الاتصال</string>
+    <string name="view_all_referrals">عرض جميع المدعوين</string>
+    <string name="min">min</string>
+    <string name="date">التاريخ</string>
+    <string name="hh_mm_ss">HH:MM:SS</string>
+    <string name="total_hours">Total Hours</string>
+    <string name="total_referrals_amount">Total Referrals Amount</string>
+
+    <string name="customer_has_changed_the_destination_location">Customer has changed the destination location</string>
+    <string name="ok">موافق</string>
+
+    <string name="total_week_payout">إيرادات الاسبوع</string>
+    <string name="referral_code">رمز دعوة السائق (إن وجد)</string>
+    <string name="invalid_referral_code">رمز الدعوة غير صحيح</string>
+    <string name="please_upload_profile_picture">ارفع صورة شخصية</string>
+    <string name="enter_make">Enter Make</string>
+    <string name="enter_model">Enter Model</string>
+    <string name="contact">راسلنا</string>
+    <string name="customer">العميل</string>
+    <string name="in_google_maps">in google maps</string>
+    <string name="please_attach_authority_latter">Please attach authority letter</string>
+    <string name="please_complete_trip">Please complete trip</string>
+    <string name="please_go_offline">Please go offline to logout</string>
+    <string name="download_now">Download now</string>
+    <string name="learn_more">اعرف المزيد</string>
+    <string name="no_trip_found">لا يوجد رحلات</string>
+    <string name="add_profile_photo">أضف صورة عرض</string>
+    <string name="age">العمر</string>
+    <string name="nationality">الجنسية</string>
+    <string name="country_of_residency">Country of Residency</string>
+    <string name="male">Male</string>
+    <string name="no_plate">Vehicle plate letters &amp; number in Eng</string>
+    <string name="registration_no">Vehicle Registration Serial number</string>
+    <string name="registration_expiry_date">تاريخ انتهاء رخصة سير المركبة</string>
+    <string name="car_make">الشركة المصنعة</string>
+    <string name="car_model">موديل المركبة</string>
+    <string name="car_color">لون المركبة</string>
+    <string name="employee_type">قطاع العمل</string>
+    <string name="stars">5 نجوم</string>
+    <string name="lifetimetips">إجمالي عدد الرحلات</string>
+    <string name="trips_count">عدد الرحلات</string>
+    <string name="acceptance">معدل القبول</string>
+    <string name="online_hrs">ساعات الاتصال</string>
+    <string name="you">أنت</string>
+    <string name="week"> اسبوع</string>
+    <string name="all">كل الأسابيع</string>
+    <string name="copy">نسخ</string>
+    <string name="copied">تم النسخ</string>
+    <string name="no_push_notifications_available">لا يوجد تنبيهات</string>
+    <string name="last_paid_on">آخر عملية تحويل تمت في</string>
+    <string name="Please_enter_insurance_number">Please enter insurance number</string>
+    <string name="do_you_want_to_continue">Do you want to continue</string>
+
+
+</resources>

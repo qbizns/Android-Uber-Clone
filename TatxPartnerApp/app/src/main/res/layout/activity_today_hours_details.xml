@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/layout_title"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_today"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@color/button_color">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/calander_icon_white"/>
+
+                <TextView
+                    android:id="@+id/tv_today_date"
+                    style="@style/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/12/1200 to 11/12/2016"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_14sdp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/tv_date"
+                style="@style/TextView12"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="@string/online_hours"
+                android:textColor="@color/button_color"/>
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/tv_hours"
+                style="@style/TextView12"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingRight="@dimen/_20sdp"
+                android:text="@string/hh_mm_ss"
+                android:textColor="@color/button_color"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/linearLayout2"
+            android:background="@color/divider" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_online_hours"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_60sdp">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_gravity="center_vertical">
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                style="@style/TextView12"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="@string/total_hours"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/tv_total_hours"
+                style="@style/TextView12"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingRight="@dimen/_20sdp"
+                android:text="@string/hh_mm_ss"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

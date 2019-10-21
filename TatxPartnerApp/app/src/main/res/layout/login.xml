@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_50sdp">
+
+
+            <LinearLayout
+                android:id="@+id/emailpwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.tatx.partnerapp.customviews.CustomEditText
+                        android:id="@+id/et_email"
+                        style="@style/AppThemeEditText"
+                        android:layout_weight="1"
+                        android:digits="0,1,2,3,4,5,6,7,8,9,@,.,_,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                        android:hint="@string/emaillogin" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/contry_code"
+                        style="@style/TextView"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:background="@drawable/feedback_form_background"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:drawableRight="@drawable/picker24"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_7sdp"
+                        android:text="@string/countrycode"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/et_password"
+                    style="@style/AppThemeEditText"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:hint="@string/pwdlogin"
+                    android:inputType="textPassword" />
+                <!--android:text="Raju@123"-->
+            </LinearLayout>
+
+            <com.tatx.partnerapp.customviews.CustomRippleView
+                android:id="@+id/signinripple"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailpwd"
+                android:layout_marginLeft="@dimen/_70sdp"
+                android:layout_marginRight="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_50sdp">
+
+                <Button
+                    android:id="@+id/btn_sign_in"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/signup_button_bg"
+                    android:text="@string/signin"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </com.tatx.partnerapp.customviews.CustomRippleView>
+
+            <com.tatx.partnerapp.customviews.CustomRippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signinripple"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_40sdp">
+
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    android:id="@+id/forgetpwd"
+                    style="@style/TextView"
+                    android:background="@drawable/forgotpwdbg"
+                    android:text="@string/frpwd" />
+
+            </com.tatx.partnerapp.customviews.CustomRippleView>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

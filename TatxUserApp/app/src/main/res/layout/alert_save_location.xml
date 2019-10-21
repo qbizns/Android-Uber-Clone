@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_20sdp"
+    android:paddingBottom="@dimen/_20sdp"
+    android:paddingLeft="@dimen/_40sdp"
+    android:paddingRight="@dimen/_40sdp"
+    >
+
+    <com.tatx.userapp.customviews.CustomEditText
+        android:id="@+id/enter_location"
+        style="@style/EditText"
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:hint="@string/enter_location_name" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.tatx.userapp.customviews.CustomRippleView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.tatx.userapp.customviews.CustomTextView
+                android:id="@+id/but_save"
+                style="@style/AppThemeTextView"
+                android:text="@string/save"
+                android:textSize="@dimen/_10sdp" />
+        </com.tatx.userapp.customviews.CustomRippleView>
+
+        <View
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="match_parent" />
+
+        <com.tatx.userapp.customviews.CustomRippleView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.tatx.userapp.customviews.CustomTextView
+                android:id="@+id/but_cancel"
+                style="@style/AppThemeTextView"
+                android:text="@string/cancel"
+                android:textSize="@dimen/_10sdp"
+
+                />
+        </com.tatx.userapp.customviews.CustomRippleView>
+    </LinearLayout>
+
+
+</LinearLayout>

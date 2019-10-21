@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/root_layout"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/whycancel"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/why_did_you_cancel" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_height="@dimen/_170sdp"
+            android:background="@drawable/reason_edit_text_background"
+            android:id="@+id/et_reasons"
+            android:hint="@string/enter_your_reason"
+            android:gravity="start"
+            android:padding="@dimen/_10sdp"
+            />
+
+
+        <com.tatx.userapp.customviews.CustomRippleView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailpwd"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_30sdp">
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/AppThemeButton"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+               />
+        </com.tatx.userapp.customviews.CustomRippleView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

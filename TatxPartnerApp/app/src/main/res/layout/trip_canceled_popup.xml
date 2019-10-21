@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+        <ImageView
+            android:id="@+id/rocket_image"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_190sdp"
+            />
+
+        <com.tatx.partnerapp.customviews.CustomRippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            >
+
+
+                <Button
+                    android:id="@+id/ll_cancel_order"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/canel_trip_btn_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:scaleType="fitCenter"
+                    android:text="@string/ok"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_15sdp"
+
+                    />
+
+        </com.tatx.partnerapp.customviews.CustomRippleView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RootLinearLayout"
+>
+
+    <include layout="@layout/layout_title" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_minus15sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:orientation="vertical"
+        >
+
+        <com.tatx.userapp.customviews.CustomButton
+            android:id="@+id/website"
+            android:autoLink="web"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:linksClickable="false"
+            android:onClick="onUrlClick"
+            android:text="@string/visit"
+            android:textColorLink="@color/white"
+            style="@style/AppThemeButton"
+            />
+
+
+
+            <com.tatx.userapp.customviews.CustomButton
+                android:id="@+id/appversion"
+                android:text="@string/version"
+                android:textAllCaps="false"
+                style="@style/AppThemeButton"
+                android:layout_marginTop="@dimen/_25sdp"
+                />
+
+
+        <com.tatx.userapp.customviews.CustomButton
+            android:id="@+id/terms"
+            style="@style/AppThemeButton"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textAllCaps="false"
+            android:text="@string/termsc"
+            />
+
+
+        <com.tatx.userapp.customviews.CustomButton
+            android:id="@+id/rateongoogleplay"
+            style="@style/AppThemeButton"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textAllCaps="false"
+            android:text="@string/rate"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

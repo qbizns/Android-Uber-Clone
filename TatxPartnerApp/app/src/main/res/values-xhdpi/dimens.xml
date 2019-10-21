@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="sp5">4sp</dimen>
+    <dimen name="sp15">12sp</dimen>
+    <dimen name="sp20">16sp</dimen>
+    <dimen name="sp25">20sp</dimen>
+    <dimen name="sp30">24sp</dimen>
+    <dimen name="sp70">56sp</dimen>
+
+</resources>

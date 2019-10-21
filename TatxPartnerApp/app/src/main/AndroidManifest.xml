@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tatx.partnerapp">
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- Accessing camera hardware -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <permission
+        android:name="com.tatx.partnerapp.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.tatx.partnerapp.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.tatx.partnerapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.tatx.partnerapp.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"></supports-screens>
+
+    <application
+        android:name=".application.TATX"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7f7610d771565ea4c0a6e2856aa94fe53c245af3" />
+
+        <activity
+            android:name=".activities.SplashActivity"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SignupLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.FreeHandCroppingActivity" />
+        <activity android:name=".activities.FreeHandCroppingActivityAddVehicle" />
+        <activity
+            android:name=".activities.RegistrationActivity1"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RegistrationActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VerificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RegistrationActivity3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.GoogleMapDrawerActivity"
+            android:launchMode="singleTop"
+            android:label="GoogleMapDrawerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".menuactivity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuactivity.DisplayProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuactivity.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuactivity.EarningsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuactivity.Rating"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuactivity.DocumentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddCarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuactivity.VehiclesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuactivity.BonusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuactivity.TopPerformersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuactivity.InviteAFriend"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuactivity.Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuactivity.Notifications"
+            android:screenOrientation="portrait" />
+        <activity android:name=".cropimages.CropImage" />
+        <activity
+            android:name=".menuactivity.TripHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".menuactivity.TripDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.ForgotPasswardActivity" />
+        <activity android:name=".activities.FeedbackActivity" />
+        <activity android:name=".activities.FeedbackFormActivity" />
+        <activity android:name=".activities.InvoiceActivity" />
+        <activity android:name=".activities.AddBankDetailsActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".menuactivity.OnlineHoursActivity"
+            android:noHistory="true"/>
+        <activity android:name=".menuactivity.AllOnlineHoursListActivity" />
+        <activity android:name=".menuactivity.TodayHoursDetails" />
+        <activity android:name=".activities.LearnMoreNotifiActivity" />
+
+        <activity
+            android:name=".activities.AcceptRejectRideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity android:name=".activities.CommonWebViewActivity" />
+        <!-- Register Broadcast receiver -->
+        <receiver
+            android:name=".gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.tatx.partnerapp" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Register Service -->
+        <service android:name=".gcm.GCMNotificationIntentService" />
+
+        <receiver
+            android:name=".broadcastreveiver.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcastreveiver.ReadIncomingSms"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".broadcastreveiver.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+
+        <activity android:name=".ViewAllReferrals"></activity>
+
+        <service
+            android:name=".services.MyService"
+            android:enabled="true" />
+
+
+
+    </application>
+
+
+</manifest>

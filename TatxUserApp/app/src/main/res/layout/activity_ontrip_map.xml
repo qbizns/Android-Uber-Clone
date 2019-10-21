@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/ll_drag_view_main"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="@dimen/_92sdp"
+    sothree:umanoParallaxOffset="@dimen/_100sdp"
+    sothree:umanoScrollableView="@+id/list"
+    sothree:umanoShadowHeight="0dp">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <fragment
+                android:id="@+id/maploc"
+                class="com.tatx.userapp.customviews.MySupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/source_dest_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/source_destination_background"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8sdp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:src="@drawable/from_to" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <com.tatx.userapp.customviews.CustomTextView
+                                android:id="@+id/tv_source_address_to_show"
+                                style="@style/TextView12"
+                                android:paddingBottom="@dimen/_10sdp"
+
+                                />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/divider" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical">
+
+                                <com.tatx.userapp.customviews.BackAwareEditText
+                                    android:id="@+id/tv_destination_address_to_show"
+                                    style="@style/AutoCompleteTextView10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_28sdp"
+                                    android:background="@android:color/transparent"
+                                    android:enabled="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:gravity="center"
+                                    android:hint="@string/choose_destination"
+                                    android:imeOptions="flagNoFullscreen"
+                                    android:paddingEnd="@dimen/_45sdp"
+                                    android:paddingRight="@dimen/_45sdp"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_edit_destination"
+                                    android:layout_width="@dimen/_35sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:id="@+id/iv_edit_location"
+                                        android:layout_width="@dimen/_25sdp"
+                                        android:layout_height="@dimen/_25sdp"
+                                        android:background="@drawable/edit_icon" />
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+                            <!--
+                                                    <com.tatx.userapp.customviews.CustomTextView
+                                                        android:id="@+id/tv_destination_address_to_show"
+                                                        style="@style/TextView12"
+                                                        android:paddingTop="@dimen/_10sdp" />-->
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <include layout="@layout/google_suggtion_class" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_170sdp">
+
+
+                <ImageView
+                    android:id="@+id/iv_picker_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageButton"
+                    android:layout_centerHorizontal="true"
+
+                    android:src="@drawable/map_pointer" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/order_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/my_current_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="@dimen/_47sdp"
+                    android:layout_marginRight="@dimen/_47sdp"
+                    android:background="@drawable/group_15" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <com.tatx.userapp.customviews.CustomRippleView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginRight="@dimen/_50sdp">
+
+                        <com.tatx.userapp.customviews.CustomButton
+                            android:id="@+id/save_button"
+                            style="@style/AppThemeButton"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/save" />
+                    </com.tatx.userapp.customviews.CustomRippleView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!-- SLIDING LAYOUT -->
+    <include layout="@layout/slide_up_panle" />
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

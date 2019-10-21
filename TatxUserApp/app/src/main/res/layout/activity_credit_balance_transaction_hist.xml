@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_background"
+        android:theme="@style/GalaxyZooThemeToolbarDarkOverflow">
+<!--
+        <RelativeLayout
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/sp80"
+            android:layout_height="@dimen/sp40"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/iconback" />
+
+        </RelativeLayout>-->
+
+        <com.tatx.userapp.customviews.CustomTextView
+            android:id="@+id/etcredit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:paddingRight="@dimen/_65sdp"
+            android:text="@string/creditbaltr"
+            android:textColor="@color/toolbar_title_color"
+            android:textSize="@dimen/_22sdp" />
+    </android.support.v7.widget.Toolbar>
+    <com.tatx.userapp.customviews.CustomTextView
+        android:id="@+id/recordnotfnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nofnfdat"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/saved_location_recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

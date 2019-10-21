@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/image_background"
+    android:layout_margin="@dimen/_5sdp"
+    android:id="@+id/linearLayout">
+
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:id="@+id/document_image"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"/>
+
+    <com.tatx.partnerapp.customviews.CustomTextView
+        android:id="@+id/title"
+        style="@style/TextView12"
+        android:singleLine="false"
+        android:text="sdfsdfd"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+
+        />
+
+</LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_10sdp">
+        <ImageView
+            android:id="@+id/iv_edit_documents"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/edit_documents"/>
+
+    </FrameLayout>
+</RelativeLayout>

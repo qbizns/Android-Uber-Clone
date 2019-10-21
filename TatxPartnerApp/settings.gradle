@@ -1,0 +1,2 @@
+include ':app', ':android-websockets-master', ':cropper'
+include ':hijriCalendarLibrary'

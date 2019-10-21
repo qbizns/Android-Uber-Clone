@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_title"/>
+
+        <com.tatx.partnerapp.customviews.CustomTextView
+            android:id="@+id/tv_add_vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/headerColor"
+            android:text="@string/add_vehicle"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|right"
+            android:paddingLeft="@dimen/_25sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textSize="@dimen/_12sdp"
+            />
+
+    </FrameLayout>
+    <com.tatx.partnerapp.customviews.CustomTextView
+        android:id="@+id/recordnotfndnotify"
+        style="@style/TextView15"
+        android:text="@string/nofnfdat"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:visibility="gone"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/saved_location_recycler_view_notify"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

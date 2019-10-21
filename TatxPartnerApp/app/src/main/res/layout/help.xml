@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:nestedScrollingEnabled="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/rl_root_view_kbh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/recordnotfnd"
+                style="@style/TextView12"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/nofnfdat"
+                android:visibility="gone" />
+
+            <ExpandableListView
+                android:id="@+id/expandableListView"
+                android:layout_width="fill_parent"
+                android:visibility="gone"
+                android:layout_height="@dimen/_120sdp"
+                android:divider="#A4C739"
+                android:dividerHeight="0.5dp"
+                android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+                android:nestedScrollingEnabled="true" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expandableListView"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    android:id="@+id/tatxhelp"
+                    style="@style/TextView"
+                    android:text="@string/tatx_for_help" />
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/helpqs"
+                    style="@style/AppThemeEditText"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/textareahelp"
+                    android:maxLines="10"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:gravity="start"
+                    />
+
+                <com.tatx.partnerapp.customviews.CustomRippleView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/username_pass"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:layout_marginRight="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/signup_button_bg"
+                        android:text="@string/submit"
+                        android:textAllCaps="false"
+                        android:textColor="#fff" />
+                </com.tatx.partnerapp.customviews.CustomRippleView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/contactinfo"
+                        style="@style/TextView"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:text="Tatx Contact Information" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/emailinfo"
+                        style="@style/TextView"
+                        android:text="Email : info@tatx.com,Phone: +966920006168" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/postboxinfo"
+                        style="@style/TextView"
+                        android:text="P.O.Box 85958,Riyadh 11612,K.S.A" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

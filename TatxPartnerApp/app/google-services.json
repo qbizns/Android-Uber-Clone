@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "815884672694",
+    "project_id": "tatxpartnerapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815884672694:android:d7d3249b26a4be77",
+        "android_client_info": {
+          "package_name": "com.tatx.partnerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArWAV2DUMQCLpn1pn5e1oe_8YVQNZ9uOE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-89851151-3"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.tatx.partnerapp.ViewAllReferrals">
+
+    <include layout="@layout/layout_title"/>
+
+    <com.tatx.partnerapp.customviews.CustomTextView
+        android:id="@+id/ctv_record_not_found"
+        style="@style/TextView15"
+        android:text="@string/nofnfdat"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_referral"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/_60sdp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_total_all_referral_amount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            style="@style/TextView12"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+
+            android:text="@string/total_referrals_amount"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_total_all_referral_amount"
+            style="@style/TextView12"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:textAllCaps="false"
+            android:paddingRight="@dimen/_20sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,351 @@
+<resources>
+    <string name="app_name">TATX Driver</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--285484011792937-->
+
+    <string name="save">Save</string>
+    <string name="saving_image">Saving image</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+
+    <!-- Registration Text  -->
+    <string name="reg">Driver Registration</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="email">Email</string>
+    <string name="countrycode">+91  </string>
+    <string name="ph">Phone Number</string>
+    <string name="pwd">Password</string>
+    <string name="city">Enter Your City</string>
+    <string name="selectlicence">Upload driver\'s license</string>
+    <string name="selectinsurance">UPLOAD INSURANCE PICTURE</string>
+    <string name="selectiqama">UPLOAD ID/IQAMA PICTURE</string>
+    <string name="selectregpic">UPLOAD VEHICLE REGISTRATION PICTURE</string>
+    <string name="register">REGISTER</string>
+    <string name="terms">Terms</string>
+
+    <!-- Signup Signin Text  -->
+    <string name="signupmain">BECOME A DRIVER</string>
+    <string name="signin">SIGN IN</string>
+
+    <!-- Login Text  -->
+    <string name="login">Sign In Driver</string>
+    <string name="emaillogin"> EMAIL OR MOBILE NO.</string>
+    <string name="pwdlogin">PASSWORD</string>
+    <string name="frpwd">FORGOT ID OR PASSWORD?</string>
+    <string name="rating">Rating</string>
+    <string name="profile_driver">Profile Driver</string>
+    <string name="supensions">How many suspensions</string>
+    <string name="earnings">Earnings</string>
+    <string name="start_date">Start Date</string>
+    <string name="avg_rating">Average Rating</string>
+    <string name="avg_acceptance_rate">Average Acceptance Rate</string>
+    <string name="avg_earnings_day">Average earnings/day</string>
+    <string name="yrrating">Your Current Rating</string>
+    <string name="lifetimetips">Life Time Trips</string>
+    <string name="ratedtrips">Rated Trips</string>
+    <string name="stars">5 Stars</string>
+    <string name="documents">Documents</string>
+    <string name="bonus">Bonus</string>
+    <string name="performance_analytics">Performance Analytics</string>
+    <string name="top_performers">Top Performers</string>
+    <string name="details">Details</string>
+
+    <!-- ForgotPassword Text  -->
+    <string name="status">Status</string>
+    <string name="distance">Distance</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="complaints">Complaints</string>
+    <string name="submit">Submit</string>
+    <string name="contact_us">Contact us</string>
+    <string name="forgotpwd">Forgot Password</string>
+
+
+    <string name="notify">Notifications</string>
+    <string name="hint_language">Language</string>
+
+    <!-- AboutActivity Text  -->
+    <string name="about">About TATX</string>
+    <string name="visit">Visit Tatx.com Website</string>
+    <string name="version">App Version Information</string>
+    <string name="termsc">Terms &amp; Conditions</string>
+    <string name="rate">Rate us on Google Store</string>
+    <!-- Account Text  -->
+    <string name="sar">SAR</string>
+
+    <!-- Newl Text  -->
+
+    <!-- capture_image Text  -->
+    <string name="camera">Camera</string>
+    <string name="gal">Gallery</string>
+
+    <!-- country_code Text  -->
+    <string name="cancel">Cancel</string>
+
+    <!-- creditbal Text  -->
+    Profile
+
+    <!-- Display_Profile_Activity Text  -->
+    <string name="edit">Edit</string>
+
+    <!-- Feedback Text  -->
+    <string name="feedback">Feedback</string>
+    <string name="feedbackform">FeedBack Form</string>
+    <string name="tatx_contact_info">Tatx Contact Information</string>
+    <string name="email_info">Email : info@tatx.com, Phone: +966920006168</string>
+    <string name="p.p.box">P.O.Box 85958, Riyadh 11612, K.S.A</string>Help
+
+    <!-- HelpActivity Text  -->
+    <string name="help">Help</string>
+    <string name="tatx_for_help">TATX For Help</string>
+    <string name="invite">Invite A Friend</string>
+    <string name="share">Share</string>
+    <string name="time">Time:</string>
+    <!-- Locations Text  -->
+
+    <!-- Loyalti Points Text  -->
+    <string name="total_week_payout">TOTAL WEEK PAYOUT</string>
+    points
+
+    <!-- Loyalti Points Text  -->
+
+    <!-- Select payments Text  -->
+    <string name="select_payments">Select payments</string>
+    <!-- Shareandarn Text  -->
+    <!-- Shareandarn Text  -->
+    <string name="verify">Verification</string>
+    <string name="tripdetails">Trip Details</string>
+    <string name="trip_history">Trip History</string>
+    <string name="tip">TIP</string>
+    <string name="navigate">Navigate</string>
+
+    <string name="rtdriver">Rate Customer</string>
+    <string name="invoice">Invoice</string>
+    <string name="nofnfdat">Record not found</string>
+    <string name="no_trip_found">No trips Found</string>
+
+
+    <string name="go_offline">GO OFFLINE</string>
+    <string name="go_online">GO ONLINE</string>
+    <string name="pickup_customer">PICKUP CUSTOMER</string>
+    <string name="start_trip">START TRIP</string>
+    <string name="complete_trip">COMPLETE TRIP</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+
+    <string name="sorry_for_delay">SORRY FOR THE DELAY</string>
+    <string name="internet_error">NOT CONNECTED TO THE INTERNET. PLEASE CHECK YOUR CONNECTION AND TRY AGAIN.</string>
+    <string name="verification_code">Please enter your verification code that was sent to your mobile no </string>
+    <string name="view_profile">View Profile</string>
+    <string name="logout">Logout</string>
+    <string name="last_trip">LAST TRIP</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="current_amount">Current Trip</string>
+    <string name="previous_amount">Pre. Adjustment</string>
+    <string name="age">Age</string>
+    <string name="nationality">Nationality</string>
+    <string name="country_of_residency">Country of Residency</string>
+    <string name="male">Male</string>
+    <string name="no_plate">Vehicle plate letters &amp; number in Eng</string>
+    <string name="registration_no">Vehicle Registration Serial number</string>
+    <string name="registration_expiry_date">Registration Expiry Date</string>
+    <string name="car_make">Car Make</string>
+    <string name="car_model">Car Model</string>
+    <string name="car_color">Car Color</string>
+    <string name="enter_amount">Enter Collected Amount</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="gender">Gender</string>
+    <string name="account_number">ACCOUNT NUMBER</string>
+    <string name="confirm_account_no">CONFIRM ACCOUNT NO</string>
+    <string name="ifsc_code">SWIFT CODE/IFSC CODE/IBAN NUMBER</string>
+    <string name="choose_country">Choose Country</string>
+    <string name="bank_name">BANK NAME</string>
+    <string name="add_bank_account">Add Bank Account</string>
+    <string name="address">ADDRESS</string>
+    <string name="add_vehicles">Add Vehicles</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="add_vehicle">Add\nVehicle</string>
+
+
+    <string name="accept_ride">Accept Ride</string>
+    <string name="decline_ride">Decline Ride</string>
+    <string name="payment_type">Payment Type: </string>
+    <string name="discount">Discount : </string>
+    <string name="adjustments">Adjustments : </string>
+    <string name="cash_to_collect">Cash to collect</string>
+    <string name="duration">Duration : </string>
+    <string name="new_password">NEW PASSWORD</string>
+    <string name="confirm_new_password">CONFIRM NEW PASSWORD</string>
+    <string name="dob">DOB</string>
+    <string name="iqama_number">ID/Iqama number</string>
+    <string name="iqama_license_expiry_date">ID/Iqama expiry date</string>
+    <string name="insurance_expiry_date">Insurance Expiry date</string>
+    <string name="car_year">vehicle year</string>
+    <string name="authority_to_drive">Authority to drive the vehicle incase the driver is not the owner</string>
+    <string name="employee_type">Employee Type</string>
+    <string name="iban_number">iBan number</string>
+    <string name="bank_country">Bank country</string>
+    <string name="insurance_number">Insurance Number</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="selectiban_bank">Upload iban bank card</string>
+    <string name="select_authority">UPLOAD AUTHORITY TO DRIVE PICTURE</string>
+    <string name="my_vehicles">My Vehicles</string>
+    <string name="payments">Earnings</string>
+    <string name="amount_due">Due Amount</string>
+    <string name="last_paid">Last Paid</string>
+    <string name="payment_history">Payment History</string>
+    <string name="why_did_you_cancel">Why did you cancel?</string>
+    <string name="please_enter_bank_name">Please enter bank name</string>
+    <string name="please_account_number">Please account number</string>
+    <string name="please_enter_car_number">Please enter vehicle plate number</string>
+    <string name="please_enter_registration_number">Please enter registration Number</string>
+    <string name="please_enter_registration_expiry_date">Please enter registration Expiry Date</string>
+    <string name="please_select_car_make">Please select vehicle Make</string>
+    <string name="please_select_car_model">Please select vehicle Model</string>
+    <string name="please_enter_car_color">Please enter vehicle color</string>
+    <string name="pick_image">Pick Image</string>
+    <string name="please_select_car_make_first">Please Select vehicle Make First.</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="please_enter_new_password">Please enter new password</string>
+    <string name="please_confirm_new_password">Please confirm new password</string>
+    <string name="mismatch_password">Mismatch password</string>
+    <string name="please_enter_email_or_mobile_no">Please enter email OR mobile no</string>
+    <string name="image_crop_failed">Image crop failed:</string>
+    <string name="destination_details_are_not_available">Destination Details are not Available.</string>
+    <string name="sorry">Sorry !</string>
+    <string name="please_choose_source">Please choose pick-up</string>
+    <string name="please_choose_destination">Please choose destination</string>
+    <string name="please_enter_collected_amount">Please Enter Collected Amount. and Please give rating.</string>
+    <string name="please_enter_collected_amount1">Please Enter Collected Amount.</string>
+    <string name="please_give_rating">Please give rating.</string>
+    <string name="please_rate_first">Please rate first</string>
+    <string name="please_enter_valid_emailid_or_phone_number">Please Enter valid EmailId or Phone Number</string>
+    <string name="please_enter_password_minimum_6_digits">Please enter Password minimum 6-digits</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="please_enter_first_name">Please enter First Name</string>
+    <string name="please_enter_last_name">Please enter Last Name</string>
+    <string name="please_enter_emailid">Please enter EmailId</string>
+    <string name="please_enter_mobile_number">Please enter Mobile Number</string>
+    <string name="please_enter_valid_mobile_number">Please enter Valid Mobile Number</string>
+    <string name="email_id_and_phone_number_already_exists">Email ID and Phone Number Already Exists.</string>
+    <string name="email_id_already_exists">Email ID Already Exists.</string>
+    <string name="phone_number_already_exists">Phone Number Already Exists.</string>
+    <string name="google_play_services_are_not_available">Google Play Services are not available.</string>
+    <string name="please_select_your_gender">Please select your Gender</string>
+    <string name="please_enter_city_name">Please enter city name</string>
+    <string name="please_enter_date_of_birth">Please enter Date Of Birth</string>
+    <string name="please_select_country_name">Please select country name</string>
+    <string name="please_enter_iqama_number">Please enter ID/IQAMA Number</string>
+    <string name="please_enter_iqama_expiry_date">Please enter ID/IQAMA Expiry Date</string>
+    <string name="please_enter_insurance_expiry_date">Please enter Insurance Expiry Date</string>
+    <string name="please_enter_car_year_yyyy">Please enter vehicle year: YYYY</string>
+    <string name="year_should_not_be_grater_than_current_year">Year should not be greater than current year</string>
+    <string name="please_enter_iban_number">Please enter Iban Number</string>
+    <string name="please_select_country_of_residency_first">Please Select Country of Residency First.</string>
+    <string name="please_choose_valid_date">Please Choose Valid Date.</string>
+    <string name="your_gps_seems_to_be_disabled">Your GPS seems to be Disabled.</string>
+    <string name="enable">Enable</string>
+    <string name="upload_police_clearance">Upload Police Clearance</string>
+    <string name="upoad_employee_id_card">Upoad emplyment Id Card only for government sector</string>
+    <string name="file_should_not_be_more_than_2_mb">File should not be more than 2 MB</string>
+    <string name="unable_to_fetch_image">Unable to Fetch Image.</string>
+    <string name="please_attach_drivers_license">Please attach driver\'s license..</string>
+    <string name="please_attach_insurance_picture">Please attach insurance picture..</string>
+    <string name="please_attach_id_card">Please attach id card..</string>
+    <string name="please_attach_vehicle_registration">Please attach vehicle registration..</string>
+    <string name="please_attach_iban_bank_card_picture">Please attach iban bank card picture..</string>
+    <string name="reg_id_creation_failed">Server is busy please try again after a while</string>
+    <string name="a_new_update_is_available">A New Update is Available</string>
+    <string name="update">Update</string>
+    <string name="invalid_otp">Invalid OTP</string>
+    <string name="please_enter_4_digit_otp">Please enter 4 digit OTP</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="this_device_doesn">your  devices OS is not new enough to support our app</string>
+    <string name="please_enter_minimum_5_characters">Please enter minimum 5 characters</string>
+    <string name="trip_number">Trip Number</string>
+    <string name="cash">Cash</string>
+    <string name="base_fare">Base Fare</string>
+    <string name="rounded_duration">Rounded Duration</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="rounded_sub_total">Rounded Sub Total</string>
+    <string name="total_fare">Total Fare</string>
+    <string name="sec">Sec</string>
+    <string name="select_image">Select image</string>
+    <string name="choose_file">Choose file</string>
+    <string name="driver_acceptance_rate">Driver\'s acceptance rate</string>
+    <string name="average_rating">Average rating</string>
+    <string name="bonus_history">Bonus history</string>
+    <string name="end_date">End Date</string>
+    <string name="or">OR</string>
+    <string name="crop">Crop</string>
+    <string name="orders_needed_to_reach_minimum">30 trips needed to be qualified for bonus</string>
+    <string name="stars_ratings_needed_to_reach_minimum"> "30 x 5 starts trips needed to be qualified for bonus"</string>
+    <string name="hours_needed_to_reach_minimum">"20 online hours needed to be qualified for bonus"</string>
+    <string name="verifyy">Verify</string>
+    <string name="paid">Paid</string>
+    <string name="coming_soon">Coming soon...</string>
+    <string name="reason_for_cancel">Reason for Cancel.</string>
+    <string name="private1">Private</string>
+    <string name="govt">Government</string>
+    <string name="vehicle_not_active">Your\'e vehicle is not activated, please contact TATX using "Help" menu</string>
+    <string name="you_vehicle_is_not_active_please_contact_tatx_customer_care">You Vehicle is not active. Please contact TATX customer care</string>
+    <string name="call">Call</string>
+    <string name="message">Message</string>
+    <string name="driver_week_online_hours">Driver Week Online Hours</string>
+    <string name="drive_peak_online_hours">Driver Peak Online Hours</string>
+    <string name="driver_week_total_trips">Driver Week Total Trips</string>
+    <string name="enter_your_reason">Enter your reason</string>
+    <string name="my_reason_is_not_listed">My reason isn\'t listed</string>
+    <string name="vehicle_plate_letters">Vehicle plate letters</string>
+    <string name="vehicle_plate_number_in_eng">Vehicle plate number in Eng</string>
+    <string name="your_share">Your Share</string>
+    <string name="all_hours">All Hours</string>
+    <string name="average_hours">Avg. Hours</string>
+    <string name="today_hours">Today Hours</string>
+    <string name="online_hours">Online Hours</string>
+    <string name="view_all_referrals">View All Referrals</string>
+    <string name="min">Min</string>
+    <string name="date">Date</string>
+    <string name="hh_mm_ss">HH:MM:SS</string>
+    <string name="total_hours">Total Hours</string>
+    <string name="total_referrals_amount">Total Referrals Amount</string>
+    <string name="customer_has_changed_the_destination_location">Customer has changed the destination location</string>
+    <string name="ok">OK</string>
+    <string name="referral_code">Driver Referral Code (optional)</string>
+    <string name="invalid_referral_code">Invalid referral code</string>
+    <string name="share_and_earn">Share and Earn</string>
+    <string name="share_via">Share via</string>
+    <string name="download_now_and_use_referral_code">Download Now and use Referral code \"</string>
+    <string name="_to_get">\" to get</string>
+    <string name="please_upload_profile_picture">Please Upload Profile Picture</string>
+    <string name="enter_make">Enter Make</string>
+    <string name="enter_model">Enter Model</string>
+    <string name="contact">Contact</string>
+    <string name="customer">Customer</string>
+    <string name="in_google_maps">in google maps</string>
+    <string name="please_attach_authority_latter">Please attach authority letter</string>
+    <string name="please_complete_trip">Please complete trip</string>
+    <string name="please_go_offline">Please go offline to logout</string>
+    <string name="download_now">Download now</string>
+    <string name="learn_more">Learn More</string>
+    <string name="no_push_notifications_available">No Push available</string>
+    <string name="add_profile_photo">Add Profile Photo</string>
+    <string name="trips_count">Trips count</string>
+    <string name="acceptance">Acceptance</string>
+    <string name="online_hrs">Online hrs</string>
+    <string name="you">You</string>
+    <string name="week">Week</string>
+    <string name="all">All</string>
+    <string name="copy">Copy</string>
+    <string name="copied">Copy</string>
+    <string name="last_paid_on">Last Paid on</string>
+    <string name="Please_enter_insurance_number">Please enter insurance number</string>
+    <string name="do_you_want_to_continue">Do you want to continue?</string>
+
+
+</resources>

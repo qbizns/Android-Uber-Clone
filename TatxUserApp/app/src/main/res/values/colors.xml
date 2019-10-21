@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_background_color">#fdfdf0</color>
+    <color name="colorPrimaryDark">#E5E5E5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="primary">#00BCD4</color>
+    <color name="primary_dark">#00aff0</color>
+    <color name="primary_light">#B2EBF2</color>
+    <color name="accent">#607D8B</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#4a4a4a</color>
+    <color name="divider">#B6B6B6</color>#F5DEB3
+    <color name="Wheat">#F5DEB3</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#2d750c</color>
+    <color name="edit_text_boarder">#dadada</color>
+    <color name="edit_text_disabled_bg_color">#dadada</color>
+
+    <color name="slider_bottom">#faf8f8</color>
+    <color name="edit_text_solid">#f0f0f0</color>
+
+    <color name="menu_color_top">#f4f4f4</color>
+    <color name="menu_buttom_color">#e5e5e5</color>
+    <color name="menu_item_color">#313131</color>
+
+
+    <color name="toolbarcolor">#fafafa</color>
+    <color name="toolbar_title_color">#db364f</color>
+    <color name="button_color">#db364f</color>
+    <color name="button__text_color">#ffffff</color>
+    <color name="statusbarcolor">#b30000</color>
+
+    <color name="titlebackgroundcolor">#8E1333</color>
+    <color name="transparent_50P">#80000000</color>
+    <color name="transparent_80P">#CC000000</color>
+
+    <color name="cash_color">#D0334B</color>
+
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="view_divider_color">#BABABA</color>
+    <color name="view_divider_color_2">#DADADA</color>
+    <color name="blue">#338DFF</color>
+    <color name="toolbarcolor_code">#E5E5E5</color>
+    <color name="_4d4d4d">#4d4d4d</color>
+
+
+</resources>

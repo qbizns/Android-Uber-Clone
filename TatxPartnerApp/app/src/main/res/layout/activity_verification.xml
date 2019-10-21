@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center">
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/mobileno"
+                style="@style/TextView"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:textColor="@color/buttonColor" />
+
+            <com.tatx.partnerapp.customviews.CustomEditText
+                android:id="@+id/otp_editbox"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobileno"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="4" />
+
+            <com.tatx.partnerapp.customviews.CustomRippleView
+                android:id="@+id/veriftyripple"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/otp_editbox"
+                android:layout_marginTop="@dimen/_40sdp">
+
+                <Button
+                    android:id="@+id/verify"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/signup_button_bg"
+                    android:text="@string/verifyy"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </com.tatx.partnerapp.customviews.CustomRippleView>
+
+            <com.tatx.partnerapp.customviews.CustomRippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/veriftyripple"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_50sdp">
+
+                <Button
+                    android:id="@+id/resend_otp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/resend_button_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/resend_code"
+                    android:textAllCaps="false"
+                    android:textStyle="normal" />
+            </com.tatx.partnerapp.customviews.CustomRippleView>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

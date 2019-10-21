@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TatxPartnerApp.iml" filepath="$PROJECT_DIR$/TatxPartnerApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-websockets-master/android-websockets-master.iml" filepath="$PROJECT_DIR$/android-websockets-master/android-websockets-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cropper/cropper.iml" filepath="$PROJECT_DIR$/cropper/cropper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hijriCalendarLibrary/hijriCalendarLibrary.iml" filepath="$PROJECT_DIR$/hijriCalendarLibrary/hijriCalendarLibrary.iml" />
+    </modules>
+  </component>
+</project>

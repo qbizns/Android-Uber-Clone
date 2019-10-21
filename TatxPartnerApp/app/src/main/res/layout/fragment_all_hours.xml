@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_today"
+        android:background="@color/button_color"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_view_clock"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_60sdp"
+            android:src="@drawable/clock"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00H"
+                    android:id="@+id/tv_online_hours"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25sdp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:id="@+id/tv_minute"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:maxLength="2"
+
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:id="@+id/tv_second"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:maxLength="2"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/min"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sec"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

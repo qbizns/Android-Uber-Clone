@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<EditText
+    android:id="@+id/enter_text"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchlayout"
+        android:layout_marginTop="@dimen/_1sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextView10"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_9sdp"
+                android:text="@string/saved_locations"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+         <!--   <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_saved_locatons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_minus1sdp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="@dimen/_minus2sdp"
+                android:layout_marginRight="@dimen/_minus2sdp"
+                android:scrollbars="vertical"
+
+                />-->
+            <!--
+            <TextView
+                android:id="@+id/tv_recent_location"
+                style="@style/TextView10"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_9sdp"
+                android:text="@string/recent_locations"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_recent_locations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/edit_text_style"
+                android:scrollbars="vertical"
+                android:layout_marginLeft="@dimen/_minus2sdp"
+                android:layout_marginRight="@dimen/_minus2sdp"
+                />-->
+         <!--   <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_google_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:scrollbars="vertical"
+                android:layout_marginLeft="@dimen/_minus2sdp"
+                android:layout_marginRight="@dimen/_minus2sdp"
+                />-->
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
+</ScrollView>

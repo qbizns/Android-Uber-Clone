@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<include layout="@layout/layout_title"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_5sdp">
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                >
+
+                <com.tatx.partnerapp.customviews.CustomFloatingLabelEditText
+                    android:id="@+id/cflet_country"
+                    style="@style/AppThemeEditText"
+                    android:digits=".,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM, "
+                    android:hint="@string/choose_country"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                >
+
+                <com.tatx.partnerapp.customviews.CustomFloatingLabelEditText
+                    android:id="@+id/cflet_bank_name"
+                    style="@style/AppThemeEditText"
+                    android:digits=".,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM, "
+                    android:hint="@string/bank_name"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                >
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/account_number"
+                    style="@style/AppThemeEditText"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="@string/account_number"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                >
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/confirm_account_no"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="@string/confirm_account_no"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                >
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_bank_unique_code"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="@string/ifsc_code"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                >
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_bank_unique_code_confirm"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="@string/ifsc_code"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <com.tatx.partnerapp.customviews.CustomRippleView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_45sdp"
+                android:layout_marginRight="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/signin_button_bg"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/buttonColor"
+                    android:textSize="@dimen/_15sdp" />
+
+            </com.tatx.partnerapp.customviews.CustomRippleView>
+
+            <TextView
+                android:id="@+id/userexists"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.50"
+                android:textColor="@color/buttonColor" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

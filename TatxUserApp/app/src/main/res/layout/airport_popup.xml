@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    android:background="@color/transparent_50P"
+    android:gravity="center_horizontal">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_70sdp"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/tv_source_selected"
+            style="@style/AutoCompleteTextView10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginBottom="@dimen/_1sdp"
+            android:background="@drawable/google_search_background"
+            android:gravity="center"
+            android:hint="@string/choose_a_starting_point"
+            android:paddingEnd="@dimen/_45sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_45sdp" />
+
+        <RelativeLayout
+            android:id="@+id/clear_source"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <ImageView
+
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:background="@drawable/search_icon" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/v_dotted_line"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plane_icon"/>
+
+    <com.tatx.userapp.customviews.CustomTextView
+        android:id="@+id/welcome"
+        style="@style/TextView15"
+        android:textAllCaps="false"
+        android:singleLine="false"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textColor="@color/white"
+
+        />
+
+    <com.tatx.userapp.customviews.CustomTextView
+        style="@style/TextView"
+        android:textAllCaps="false"
+        android:singleLine="false"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="@string/request_when_you_are_ready"
+        android:textColor="@color/white"
+       />
+
+
+</LinearLayout>
+
+</RelativeLayout>

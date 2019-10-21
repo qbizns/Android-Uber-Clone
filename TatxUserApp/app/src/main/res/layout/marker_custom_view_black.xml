@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_custom_marker_icon"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/map_pointer_black" />
+
+
+        <com.tatx.userapp.customviews.CustomTextView
+            android:id="@+id/tv_destination_reach_time"
+            style="@style/TextView10"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_custom_marker_icon"
+            android:layout_alignRight="@+id/iv_custom_marker_icon"
+            android:layout_alignTop="@+id/iv_custom_marker_icon"
+            android:layout_alignBottom="@+id/iv_custom_marker_icon"
+            android:text="D"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_19sdp"
+            android:singleLine="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8sdp" />
+    <!--android:text="2\nMin"-->
+
+    </RelativeLayout>
+
+

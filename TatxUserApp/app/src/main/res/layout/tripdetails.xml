@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_title" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/mapImages"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:scaleType="fitXY" />
+
+
+            <LinearLayout
+                android:id="@+id/linearll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mapImages"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rating_bg"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/rate"
+                        style="@style/TextView12"
+                        android:layout_gravity="left|center" />
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@color/Wheat" />
+
+                    <RatingBar
+                        android:id="@+id/userrating"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:isIndicator="false"
+                        android:numStars="1"
+                        android:progressTint="@color/Wheat"
+                        android:rating="1" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/mapImages"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_toRightOf="@+id/frameLayout"
+                android:orientation="vertical">
+
+                <com.tatx.userapp.customviews.CustomTextView
+                    android:id="@+id/date"
+                    style="@style/TextView12" />
+
+                <com.tatx.userapp.customviews.CustomTextView
+                    android:id="@+id/rs"
+                    style="@style/TextView12"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/_minus7sdp" />
+
+                <com.tatx.userapp.customviews.CustomTextView
+                    android:id="@+id/vehiclemake"
+                    style="@style/TextView10"
+                    android:layout_marginTop="@dimen/_minus7sdp"
+
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/ll_sar"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/tripdetails"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_sar"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_sar"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/distance"
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/distance"
+
+                        />
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/distance_km"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        />
+
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/kms"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_width="0dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearll"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/duration"
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/duration"
+
+                        />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/duration_min"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/min"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_width="0dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearll"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/basefare"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/base_fare"
+
+                        />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/bsfar"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearll"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/distancefare"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/distance_fare"
+
+                        />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/sarfare"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearll"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/durationfare"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/duration_fare"
+
+                        />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/sarduration"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearll"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/adjustment"
+
+                        />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/adjustment"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearll"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/discount"
+
+                        />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/ctv_discount"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearll"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/subtotal"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/sub_total"
+
+                        />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/subtotalsar"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearll"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/tip"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/tip_proper"
+
+                        />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/tipsar"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearll"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/rounddwn"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/round_down"
+                        android:textColor="@color/button_color"
+
+                        />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/rnddnsar"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/button_color" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearll"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/totalfare"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/total_fare"
+
+                        />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/totalsarfare"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearll"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/paymentmthd"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/payment_method"
+
+                        />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        android:id="@+id/cash"
+                        style="@style/TextView12"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/cash"
+                        android:textAllCaps="true"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.tatx.userapp.customviews.CustomRippleView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tripdetails"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp">
+
+                <Button
+                    android:id="@+id/feedback"
+                    style="@style/AppThemeButton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_18sdp"
+                    android:layout_marginRight="@dimen/_18sdp"
+                    android:text="@string/feedback" />
+            </com.tatx.userapp.customviews.CustomRippleView>
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearll"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/_minus20sdp"
+                android:layout_marginLeft="@dimen/_60sdp">
+
+                <com.tatx.userapp.commonutills.CircleImageView
+                    android:id="@+id/iv_user_pic"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:src="@drawable/pic" />
+            </FrameLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

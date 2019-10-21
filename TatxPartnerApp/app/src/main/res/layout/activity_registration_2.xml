@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_title" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_25sdp"
+            android:paddingRight="@dimen/_25sdp">
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                android:id="@+id/til_gender"
+                >
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_gender"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/gender"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_date_of_birth"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/dob"
+                    android:inputType="text"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/age"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/age"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_nationality"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/nationality" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                android:id="@+id/til_country_of_residency">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_country_of_residency"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/country_of_residency" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_city"
+                    style="@style/AppThemeEditText"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,., ,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/city" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                android:layout_height="@dimen/_65sdp">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/address"
+                    style="@style/AppThemeEditText"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="start"
+                    android:hint="@string/address"
+                    android:inputType="textMultiLine|text"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:singleLine="false"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/iqama_number"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:digits="0123456789"
+                    android:hint="@string/iqama_number"
+                    android:inputType="number"
+                    android:maxLength="10" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!--   <android.support.design.widget.TextInputLayout
+                   style="@style/AppThemeTextInputLayout"
+                   >
+                   <com.tatx.partnerapp.customviews.CustomEditText
+                       android:id="@+id/driver_id_no"
+                       style="@style/AppThemeEditText"
+                       android:layout_width="fill_parent"
+                       android:layout_marginTop="@dimen/_20sdp"
+                       android:hint="@string/driver_id_no"
+                       android:inputType="text" />
+               </android.support.design.widget.TextInputLayout>
+   -->
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_iqama_license_expiry_date"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/iqama_license_expiry_date"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                android:visibility="gone">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/registration_no"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,, ,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                    android:hint="@string/registration_no" />
+                />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_saudia_plate_no"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/AppThemeTextInputLayout"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1">
+
+                    <com.tatx.partnerapp.customviews.CustomEditText
+                        android:id="@+id/saudia_plate_number"
+                        style="@style/AppThemeEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:hint="@string/vehicle_plate_number_in_eng"
+
+                        android:inputType="number" />
+                    />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/AppThemeTextInputLayout"
+                    android:layout_weight="1">
+
+                    <com.tatx.partnerapp.customviews.CustomEditText
+                        android:id="@+id/saudia_no_plate_letters"
+                        style="@style/AppThemeEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:digits="qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                        android:hint="@string/vehicle_plate_letters"
+                        android:singleLine="false" />
+                    />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_non_saudia_no_plate"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                    <com.tatx.partnerapp.customviews.CustomEditText
+                        android:id="@+id/no_plate"
+                        style="@style/AppThemeEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:digits="0,1,2,3,4,5,6,7,8,9,, ,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                        android:hint="@string/no_plate"
+                        android:inputType="text" />
+                    />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_registration_expiry_date"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/registration_expiry_date"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/insurance_number"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="@string/insurance_number"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_insurance_expiry_date"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/insurance_expiry_date"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_car_make"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/car_make" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                android:id="@+id/tnl_car_make_other"
+                android:visibility="gone">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_car_make_other"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/car_make" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_car_model"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/car_model" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                android:id="@+id/tnl_car_model_other"
+                android:visibility="gone">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_car_model_other"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/car_make" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/et_car_color"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="@string/car_color"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_car_year"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="@string/car_year"
+                    android:inputType="number"
+                    android:maxLength="4" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                style="@style/TextView"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:hint="@string/authority_to_drive"
+                android:singleLine="false"
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_driver_authority"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/yes"
+                    android:textSize="@dimen/_12sdp"  />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/no"
+                    android:textSize="@dimen/_12sdp"
+                    />
+
+            </RadioGroup>
+
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/ctv_emp_type"
+                style="@style/TextView"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="left"
+                android:hint="@string/employee_type"
+                android:singleLine="false"
+                android:textColor="@color/black"
+                android:visibility="gone"/>
+
+            <RadioGroup
+                android:id="@+id/rg_emp_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:visibility="gone">
+
+
+                <RadioButton
+                    android:id="@+id/rb_emp_type_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="true"
+                    android:text="@string/private1"
+                    android:textSize="@dimen/_12sdp" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="false"
+                    android:text="@string/govt"
+                    android:textSize="@dimen/_12sdp" />
+            </RadioGroup>
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                android:id="@+id/til_bank_country"
+                >
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_bank_country"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/bank_country" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_bank_name"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/bank_name"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout style="@style/AppThemeTextInputLayout">
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/cet_iban_number"
+                    style="@style/AppThemeEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                    android:hint="@string/iban_number" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <com.tatx.partnerapp.customviews.CustomRippleView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/sp25"
+                android:layout_marginLeft="@dimen/sp70"
+                android:layout_marginRight="@dimen/sp70"
+                android:layout_marginTop="@dimen/sp30">
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/feedback_form_background"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="#ff00"
+                    android:textSize="@dimen/sp20" />
+
+            </com.tatx.partnerapp.customviews.CustomRippleView>
+
+            <TextView
+                android:id="@+id/userexists"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.50"
+                android:textColor="#ff0000" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

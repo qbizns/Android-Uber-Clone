@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:src="@drawable/change_dest_location" />
+
+        <com.tatx.partnerapp.customviews.CustomTextView
+            style="@style/TextView15"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:singleLine="false"
+            android:text="@string/customer_has_changed_the_destination_location"
+            android:textAllCaps="false" />
+
+        <com.tatx.partnerapp.customviews.CustomTextView
+            android:id="@+id/tv_changed_address"
+            style="@style/TextView12"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:singleLine="false"
+            android:text="@string/customer_has_changed_the_destination_location"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <com.tatx.partnerapp.customviews.CustomButton
+            android:id="@+id/ok"
+            style="@style/Button"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/button_bg_red"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_40sdp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

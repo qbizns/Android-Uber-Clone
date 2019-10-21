@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_payment_mastercard.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_payment_mastercard.png"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_close.xml",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_close.xml"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_shadow_top.9.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_shadow_top.9.png"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_payment_visa.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_payment_visa.png"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_shadow_icon.9.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_shadow_icon.9.png"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_background.xml",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_background.xml"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_header_close.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_header_close.png"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_shadow_icon_layer.xml",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_shadow_icon_layer.xml"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_shadow_top_layer.xml",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_shadow_top_layer.xml"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_list_disclosure.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_list_disclosure.png"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_shadow_bottom_layer.xml",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_shadow_bottom_layer.xml"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_payment_diners.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_payment_diners.png"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_shadow_bottom.9.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_shadow_bottom.9.png"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_fabric.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_fabric.png"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_payment_amex.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_payment_amex.png"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_payment_jcb.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_payment_jcb.png"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\debug\\drawable\\connect_checkout_payment_account.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\src\\main\\res\\drawable\\connect_checkout_payment_account.png"
+    }
+]

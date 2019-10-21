@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true"
+        android:nestedScrollingEnabled="true"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:id="@+id/hide_keyboard_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusableInTouchMode="true">
+
+            <com.tatx.userapp.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/nofnfdat"
+                android:textSize="@dimen/_25sdp"
+                android:visibility="gone" />
+
+            <ExpandableListView
+                android:id="@+id/expandableListView"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:divider="#A4C739"
+                android:dividerHeight="0.5dp"
+                android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+                android:nestedScrollingEnabled="true"
+                 />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expandableListView"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <com.tatx.userapp.customviews.CustomTextView
+                    style="@style/TextView15"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/tatx_for_help" />
+
+                <com.tatx.userapp.customviews.CustomEditText
+                    android:id="@+id/helpqs"
+                    style="@style/EditText"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/text_box_background"
+                    android:gravity="left|top"
+                    android:imeOptions="flagNoFullscreen"
+                    android:maxLines="10"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="false"
+                    android:hint="@string/please_enter_your_concern"
+                    />
+
+                <com.tatx.userapp.customviews.CustomRippleView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <com.tatx.userapp.customviews.CustomButton
+                        android:id="@+id/submit"
+                        style="@style/AppThemeButton"
+                        android:layout_gravity="center"
+                        android:text="@string/submit" />
+                </com.tatx.userapp.customviews.CustomRippleView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        style="@style/TextView10"
+                        android:singleLine="false"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/tatx_contact_info" />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        style="@style/TextView10"
+                        android:singleLine="false"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/email_info"
+                        />
+
+                    <com.tatx.userapp.customviews.CustomTextView
+                        style="@style/TextView10"
+                        android:singleLine="false"
+                        android:text="@string/p.p.box" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

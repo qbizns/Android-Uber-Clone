@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarcolor_code"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_title_back"
+            android:layout_width="wrap_content"
+            android:onClick="onTitleBackPressed"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_13sdp"
+                android:background="@drawable/back_chevron" />
+
+        </LinearLayout>
+
+
+        <com.tatx.userapp.customviews.CustomTextView
+            android:id="@+id/tv_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="#4A4A4A"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+
+    android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color = "@color/slider_bottom"/>
+
+    <stroke android:width="@dimen/_30sdp"
+        android:color="@android:color/transparent"/>
+<size android:height="@dimen/_5sdp"
+    android:width="@dimen/_5sdp"/>
+
+
+</shape>

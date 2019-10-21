@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_title"/>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_25sdp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+
+            >
+
+            <com.tatx.partnerapp.commonutills.CircleImageView
+                android:id="@+id/iv_profile_pic"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/userpic"
+                />
+            <com.tatx.partnerapp.customviews.CustomTextView
+                style="@style/TextView12"
+                android:text="@string/add_profile_photo"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <LinearLayout
+                android:id="@+id/flnames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_profile_pic"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    style="@style/AppThemeTextInputLayout"
+                    >
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/et_first_name"
+                    style="@style/AppThemeEditText"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz."
+                    android:hint="@string/firstname" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    style="@style/AppThemeTextInputLayout"
+                    >
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/et_last_name"
+                    style="@style/AppThemeEditText"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz."
+                    android:hint="@string/lastname"
+                   />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                >
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/et_email"
+                    style="@style/AppThemeEditText"
+                    android:digits="0,1,2,3,4,5,6,7,8,9,@,.,_,qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/AppThemeTextInputLayout"
+                    android:layout_width="wrap_content"
+                    >
+                <LinearLayout
+                    android:id="@+id/ll_cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@drawable/feedback_form_background">
+
+                    <ImageView
+                        android:id="@+id/flag_image"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="left|center_vertical"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="@dimen/_10sdp"
+
+                        />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_country_code"
+                        style="@style/TextView12"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="+91" />
+                </LinearLayout>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/AppThemeTextInputLayout"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    >
+                    <com.tatx.partnerapp.customviews.CustomEditText
+                        android:id="@+id/ph"
+                        style="@style/AppThemeEditText"
+                        android:layout_width="match_parent"
+                        android:hint="@string/ph"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                >
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/et_password"
+                    style="@style/AppThemeEditText"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="@string/pwd"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+           <!-- <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                >
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/et_refer_type"
+                    style="@style/AppThemeEditText"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:hint="@string/refer_type"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false" />
+
+            </android.support.design.widget.TextInputLayout>-->
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/AppThemeTextInputLayout"
+                android:visibility="visible"
+                >
+
+                <com.tatx.partnerapp.customviews.CustomEditText
+                    android:id="@+id/refer_others"
+                    style="@style/AppThemeEditText"
+                    android:inputType="text"
+                    android:hint="@string/referral_code"
+                    android:textAllCaps="true"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <com.tatx.partnerapp.customviews.CustomRippleView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_25sdp">
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/signup_button_bg"
+                    android:text="@string/register"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+            </com.tatx.partnerapp.customviews.CustomRippleView>
+
+            <TextView
+                android:id="@+id/userexists"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.50"
+                android:visibility="gone"
+                android:textColor="#ff0000" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.6"
+                        android:gravity="left"
+                        android:text="@string/driver_acceptance_rate"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_dirver_acceptance_rate"
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:gravity="left"
+                        android:text="80%"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1.6"
+                        android:gravity="left"
+
+                        android:text="@string/orders_needed_to_reach_minimum"
+                        android:id="@+id/tv_acceptance_rate_desc" />
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+
+
+                        android:gravity="left" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.6"
+                        android:gravity="left"
+                        android:text="@string/average_rating"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:gravity="left"
+                        android:text="4.4"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_avg_rating" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1.6"
+                        android:gravity="left"
+
+                        android:text="@string/stars_ratings_needed_to_reach_minimum"
+                        android:id="@+id/tv_avg_rating_desc" />
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+
+
+                        android:gravity="left" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.6"
+                        android:gravity="left"
+                        android:text="@string/driver_week_online_hours"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:gravity="left"
+                        android:text="35 Hrs"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_week_online_hours"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1.6"
+                        android:gravity="left"
+
+                        android:text="@string/hours_needed_to_reach_minimum"
+                        android:id="@+id/tv_online_hours_desc" />
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+
+
+                        android:gravity="left" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.6"
+                        android:gravity="left"
+                        android:text="@string/drive_peak_online_hours"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:gravity="left"
+                        android:text="35 Hrs"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_peak_online_hours" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1.6"
+                        android:gravity="left"
+
+                        android:text="@string/hours_needed_to_reach_minimum"
+                        android:id="@+id/tv_peak_online_hours_desc" />
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+
+
+                        android:gravity="left" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.6"
+                        android:gravity="left"
+                        android:text="@string/driver_week_total_trips"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:gravity="left"
+                        android:text="35 Hrs"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_driver_week_total_trips" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1.6"
+                        android:gravity="left"
+
+                        android:text="@string/hours_needed_to_reach_minimum"
+                        android:id="@+id/tv_driver_week_total_trips_desc" />
+
+                    <TextView
+                        style="@style/TextView12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+
+
+                        android:gravity="left" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/TextView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:text="@string/bonus_history"
+                android:textStyle="bold" />
+
+
+            <TextView
+                style="@style/TextView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/details" />
+
+
+            <TableLayout
+                android:id="@+id/table_layout_main"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/cell_shape"
+                android:padding="0.5dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/start_date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/end_date"
+                        android:textColor="@color/black"
+
+                        android:textSize="@dimen/_11sdp"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_bonus_amount_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/bonus"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/status"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+<!--
+
+                <include layout="@layout/bonus_details_row"/>
+
+                <include layout="@layout/bonus_details_row"/>
+
+                <include layout="@layout/bonus_details_row"/>
+
+                <include layout="@layout/bonus_details_row"/>
+
+                <include layout="@layout/bonus_details_row"/>
+
+                <include layout="@layout/bonus_details_row"/>
+
+                <include layout="@layout/bonus_details_row"/>
+
+                <include layout="@layout/bonus_details_row"/>
+
+-->
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

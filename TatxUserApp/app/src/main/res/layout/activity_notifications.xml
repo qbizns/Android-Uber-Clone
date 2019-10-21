@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/layout_title" />
+
+    <com.tatx.userapp.customviews.CustomTextView
+        android:id="@+id/recordnotfndnotify"
+        style="@style/TextView12"
+        android:text="@string/no_push_notifications_available"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/saved_location_recycler_view_notify"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

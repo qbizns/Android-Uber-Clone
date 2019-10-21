@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:background="@drawable/side_nav_bar_new"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_25sdp"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingRight="@dimen/_10sdp"
+    android:paddingTop="@dimen/design_navigation_separator_vertical_padding"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.tatx.userapp.customviews.CustomTextView
+            android:id="@+id/username"
+            style="@style/TextView12"
+            android:layout_marginRight="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <com.tatx.userapp.customviews.CustomTextView
+            android:id="@+id/userlname"
+            style="@style/TextView12"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!-- android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/loyaltiicon"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.tatx.userapp.commonutills.CircularImageViewWithBoarder
+                android:id="@+id/profilepic"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:src="@drawable/avatar" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.tatx.userapp.customviews.CustomTextView
+                android:id="@+id/creditpoints"
+                style="@style/TextView12"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:textStyle="bold" />
+
+            <com.tatx.userapp.customviews.CustomTextView
+                style="@style/TextView12"
+                android:text="@string/credits"
+                android:textAllCaps="true"
+                android:textColor="@color/green"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

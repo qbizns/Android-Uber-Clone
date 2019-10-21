@@ -1,0 +1,70 @@
+<resources>
+
+    <string name="connect_checkout_library_name">connect.checkout</string>
+
+    <!-- accessibility -->
+    <string name="connect_checkout_layout_accessibility_payment_icon">Bezahmöglichkeit</string>
+    <string name="connect_checkout_layout_accessibility_list_disclosure">Bezahlen mit</string>
+    <string name="connect_checkout_layout_accessibility_cancel_checkout">Vorgang abbrechen</string>
+    <string name="connect_checkout_layout_accessibility_originating_app_icon">Quellen App-Icon</string>
+
+    <!-- content -->
+    <string name="connect_checkout_layout_text_selected_payment_method">Bezahlen mit</string>
+    <string name="connect_checkout_layout_text_review_and_confirm">Überprüfen und Bestätigen</string>
+    <string name="connect_checkout_layout_text_pay">Kostenpflichtig Bestellen</string>
+    <string name="connect_checkout_layout_text_first_last_name">Vor- und Nachname</string>
+    <string name="connect_checkout_layout_text_name">Name</string>
+    <string name="connect_checkout_layout_text_cc_number">Kreditkartennummer</string>
+    <string name="connect_checkout_layout_text_cc_expiry">Ablaufdatum</string>
+    <string name="connect_checkout_layout_text_cc_cvv">CVV</string>
+    <string name="connect_checkout_layout_text_dd_account_number">Kontonummer</string>
+    <string name="connect_checkout_layout_text_dd_bank_number">BLZ</string>
+    <string name="connect_checkout_layout_text_footer_step0">Wählen Sie eine Bezahlmöglichkeit</string>
+    <string name="connect_checkout_layout_text_footer_step1">Geben Sie Ihre Bezahldaten ein</string>
+    <string name="connect_checkout_layout_text_footer_step2">Überprüfen Sie Ihre Bezahldaten</string>
+    <string name="connect_checkout_layout_text_footer_step3">Bezahlung wird ausgeführt</string>
+    <string name="connect_checkout_layout_text_selected_payment_method_direct_debit">Lastschrift</string>
+    <string name="connect_checkout_layout_text_country">Land</string>
+    <string name="connect_checkout_layout_text_header_vat" formatted="false">(inkl. %.2f %s MwSt.)</string>
+    <string name="connect_checkout_layout_text_header_amount" formatted="false">%.2f %s</string>
+
+    <!-- hints -->
+    <string name="connect_checkout_layout_hint_first_last_name">Vor- und Nachname</string>
+    <string name="connect_checkout_layout_hint_cc_number">Kreditkartennummer</string>
+    <string name="connect_checkout_layout_hint_cc_expiry_month">MM</string>
+    <string name="connect_checkout_layout_hint_cc_expiry_year">JJJJ</string>
+    <string name="connect_checkout_layout_hint_cc_cvv">CVV</string>
+    <string name="connect_checkout_layout_hint_dd_account">Kontonummer</string>
+    <string name="connect_checkout_layout_hint_dd_bank">BLZ</string>
+
+    <!-- dummys -->
+    <string name="connect_checkout_layout_dummy_name">John Doe</string>
+    <string name="connect_checkout_layout_dummy_cc_number">*-2323</string>
+    <string name="connect_checkout_layout_dummy_cc_expiry">12/2020</string>
+    <string name="connect_checkout_layout_dummy_cc_cvv">xxx</string>
+    <string name="connect_checkout_layout_dummy_footer_text">Dummy footer</string>
+    <string name="connect_checkout_layout_dummy_header_title">Dummy footer</string>
+    <string name="connect_checkout_layout_dummy_header_amount">Dummy footer</string>
+    <string name="connect_checkout_layout_dummy_header_vat">(including 0.19 EUR VAT)</string>
+    <string name="connect_checkout_layout_dummy_transaction_run">Executing transaction</string>
+    <string name="connect_checkout_layout_dummy_country">DE</string>
+    <string name="connect_checkout_layout_dummy_dd_account_number">x-123</string>
+    <string name="connect_checkout_layout_dummy_dd_bank_number">700 000 00</string>
+
+    <!-- payment -->
+    <string name="connect_checkout_payment_mastercard">Mastercard</string>
+    <string name="connect_checkout_payment_visa">VISA</string>
+    <string name="connect_checkout_payment_amex">American Express</string>
+    <string name="connect_checkout_payment_jcb">JCB</string>
+    <string name="connect_checkout_payment_diners">Diners Club</string>
+    <string name="connect_checkout_payment_direct_debit">Lastschrift</string>
+    <string name="connect_checkout_layout_text_store_account_data">Meine Zahlungsdaten speichern</string>
+    <string name="connect_checkout_layout_text_stored_account_credit_card">Gespeicherte Kreditkarte</string>
+    <string name="connect_checkout_layout_text_stored_account_direct_debit_card">Gespeicherte Lastschrift</string>
+    <string name="connect_checkout_layout_text_stored_account_credit_card_description">Kreditkarte</string>
+    <string name="connect_checkout_layout_text_stored_account_direct_debit_card_description">Lastschrift</string>
+        
+    
+    <string name="connect_checkout_layout_text_stored_account_ending_with">endet mit</string>
+
+</resources>

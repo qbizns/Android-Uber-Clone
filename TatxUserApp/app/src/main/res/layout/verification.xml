@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/layout_title"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_33sdp"
+            android:paddingRight="@dimen/_33sdp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <com.tatx.userapp.customviews.CustomTextView
+                style="@style/TextView12"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:singleLine="false"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:text="@string/please_enter_veryfication"
+                />
+
+            <com.tatx.userapp.customviews.CustomTextView
+                android:id="@+id/mobileno"
+                style="@style/TextView12"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="#ed174a"
+                />
+
+            <com.tatx.userapp.customviews.CustomEditText
+                android:id="@+id/otp_editbox"
+                style="@style/EditText"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_42sdp"
+                android:maxLength="4"
+                android:inputType="numberPassword"
+                android:gravity="center"
+                />
+
+            <com.tatx.userapp.customviews.CustomRippleView
+                android:id="@+id/resend_otp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/otp_editbox"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:background="@android:color/transparent"
+                android:gravity="center" >
+
+
+                <com.tatx.userapp.customviews.CustomButton
+                    android:id="@+id/resend_otp"
+                    style="@style/Button"
+                    android:background="@android:color/transparent"
+                    android:text="@string/resend_code"
+                    />
+
+
+            </com.tatx.userapp.customviews.CustomRippleView>
+            <com.tatx.userapp.customviews.CustomRippleView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/resend_otp1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_50sdp"
+                >
+                <Button
+                    android:id="@+id/verify"
+                    style="@style/AppThemeButton"
+                    android:text="@string/verify1"
+                    />
+            </com.tatx.userapp.customviews.CustomRippleView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

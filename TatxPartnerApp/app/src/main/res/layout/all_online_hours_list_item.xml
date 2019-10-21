@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.tatx.partnerapp.customviews.CustomTextView
+            android:id="@+id/tv_date"
+            style="@style/TextView12"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="12/12/1222"/>
+
+        <com.tatx.partnerapp.customviews.CustomTextView
+            android:id="@+id/tv_hours"
+            style="@style/TextView12"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingRight="@dimen/_20sdp"
+            android:text="08:08:50" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/linearLayout2"
+        android:background="@color/divider" />
+
+</RelativeLayout>

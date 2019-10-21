@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+
+    <!-- Menu Item Image -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+        android:background="@drawable/notifications_count" />
+
+    <!-- Badge Count -->
+    <TextView
+        android:id="@+id/tv_un_read_notification_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="9"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingRight="@dimen/_2sdp"
+        android:textSize="@dimen/_6sdp"
+        android:textColor="@color/statusbarcolor" />
+    <!--android:padding="@dimen/padding_small"-->
+
+
+</RelativeLayout>

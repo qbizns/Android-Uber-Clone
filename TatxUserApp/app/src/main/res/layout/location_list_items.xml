@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:id="@+id/linear_row_click"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_6sdp"
+            android:paddingRight="@dimen/_6sdp">
+            <ImageView
+
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/fav_loc"
+                android:clickable="false"
+                android:focusable="false"/>
+            <com.tatx.userapp.customviews.CustomTextView
+                android:id="@+id/textView5"
+                style="@style/TextView12"
+                android:layout_width="0dp"
+                android:gravity="left"
+                android:text="sfsdfsdfsdf"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_update_location"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/dots"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="0dip"
+        android:background="@color/divider"/>
+</LinearLayout>

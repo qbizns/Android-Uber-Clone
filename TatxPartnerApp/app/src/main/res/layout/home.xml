@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:id="@+id/navigation_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                >
+
+                <com.tatx.partnerapp.customviews.CustomRippleView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                <ImageView
+                    android:id="@+id/navigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:src="@drawable/menu"
+
+                    />
+</com.tatx.partnerapp.customviews.CustomRippleView>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:src="@drawable/homelogo" />
+
+            <CheckBox
+                android:id="@+id/make_last_trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:text="@string/last_trip" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+
+
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@dimen/_15sdp"
+            map:cameraZoom="17"/>
+
+      <!--  <com.tatx.partnerapp.customviews.CustomRippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_online_offline_rv_wrapper"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            >
+        <Button
+            android:id="@+id/btn_online_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/online_button_bg"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="@string/go_online"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+</com.tatx.partnerapp.customviews.CustomRippleView>-->
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_on_off"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:track="@drawable/switch_track_selector"
+            android:thumb="@drawable/switch_thumb_selector"
+
+
+            />
+
+        <com.tatx.partnerapp.customviews.CustomRippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switch_on_off"
+            >
+        <Button
+            android:id="@+id/btn_trip_current_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btn_online_offline"
+            android:background="@drawable/pickup_button_bg"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/pickup_customer"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            android:visibility="gone" />
+        </com.tatx.partnerapp.customviews.CustomRippleView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-2dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_driver_current_destination_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/contact_button_bg"
+                        android:padding="@dimen/_5sdp">
+
+                        <com.tatx.partnerapp.customviews.CustomTextView
+                            android:id="@+id/tv_driver_current_destination_address"
+                            style="@style/TextView"
+                            />
+                    </LinearLayout>
+
+                    <include layout="@layout/contact_navigation_layout"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:id="@+id/linearl"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/iv_profile_pic"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:src="@drawable/pic" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <com.tatx.partnerapp.customviews.CustomTextView
+                                    android:id="@+id/tv_customer_name"
+                                    style="@style/TextView"
+                                    />
+
+                                <!-- <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:layout_marginTop="@dimen/_10"
+                                     android:text="@string/names" />-->
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_rating"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/rating" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:background="#4d4b45"
+                            android:visibility="gone"
+                            android:layout_below="@id/linearl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_8sdp"
+                            >
+
+
+
+                            <TextView
+                                style="@style/TextView12"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:text="60 min"
+                                />
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <include layout="@layout/layout_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginRight="-3dp"
+            android:background="@drawable/source_destination_background"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/from_to" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:orientation="vertical">
+
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    android:id="@+id/tv_pick_address"
+                    style="@style/TextView10"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_6sdp"
+
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider" />
+
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    android:id="@+id/tv_destination_address"
+                    style="@style/TextView10"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_6sdp"
+
+                     />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+            >
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                style="@style/TextView10"
+                android:text="@string/payment_type"
+                android:textStyle="bold" />
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/payment_type"
+                 style="@style/TextView10"
+                android:textColor="@color/green"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                style="@style/TextView12"
+                android:text="@string/cash_to_collect"
+                android:textAllCaps="true"
+                android:id="@+id/tv_cash_to_collect"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                style="@style/TextView10"
+                android:text="@string/discount"
+                android:textStyle="bold"
+
+                />
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/tv_discount"
+                style="@style/TextView12"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_collect_cash"
+                style="@style/TextView12"
+                android:textColor="@color/buttonColor"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:text="00.00"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                style="@style/TextView10"
+                android:text="@string/distance"
+                android:textStyle="bold" />
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/tv_distance"
+                style="@style/TextView12"
+                android:textStyle="bold" />
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                style="@style/TextView10"
+                android:text=" Km"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                style="@style/TextView10"
+                android:text="@string/your_share"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                style="@style/TextView10"
+                android:text="@string/adjustments"
+                android:textStyle="bold" />
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/tv_adjestments"
+                style="@style/TextView12"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_your_share"
+                style="@style/TextView10"
+                android:text="00.00"
+                android:textStyle="bold"
+                android:textColor="@color/buttonColor"
+                android:textSize="@dimen/_12sdp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    style="@style/TextView10"
+                    android:text="@string/duration"
+                    android:textStyle="bold" />
+
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    android:id="@+id/tv_duration"
+                    style="@style/TextView12"
+                    android:textStyle="bold" />
+
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    style="@style/TextView10"
+                    android:text=" Min"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_15sdp"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/contact_button_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                style="@style/TextView10"
+                android:text="@string/previous_amount"
+                />
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/tv_previous_amount"
+                style="@style/TextView10"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                style="@style/TextView10"
+                android:text="@string/current_amount"
+                />
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/tv_current_amount"
+                style="@style/TextView10"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                style="@style/TextView10"
+                android:text="@string/total_amount"
+                />
+
+            <com.tatx.partnerapp.customviews.CustomTextView
+                android:id="@+id/tv_trip_amount"
+                style="@style/TextView10"
+                android:textColor="@color/button_color"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+        <com.tatx.partnerapp.customviews.CustomEditText
+            android:id="@+id/cet_collected_cash"
+            style="@style/AppThemeEditText"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:hint="@string/enter_amount"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/_15sdp"
+            android:maxLength="6"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <com.tatx.partnerapp.customviews.CustomTextView
+        style="@style/TextView12"
+        android:layout_gravity="center"
+        android:text="@string/rtdriver"
+        />
+
+    <RatingBar
+        android:id="@+id/rb_rating_to_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1" />
+
+    <com.tatx.partnerapp.customviews.CustomRippleView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <Button
+            android:id="@+id/btn_submit_invoice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/signup_button_bg"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+    </com.tatx.partnerapp.customviews.CustomRippleView>
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>

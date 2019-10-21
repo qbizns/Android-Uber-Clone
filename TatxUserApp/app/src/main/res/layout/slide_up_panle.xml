@@ -1,0 +1,276 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_drag_view_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:focusable="false"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_65sdp"
+                    android:background="@android:color/white"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/plate_no_background"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_5sdp">
+
+                            <com.tatx.userapp.customviews.CustomTextView
+                                android:id="@+id/rate"
+                                style="@style/TextView10"
+                                android:layout_gravity="left|center"
+                                android:textAllCaps="true"
+                                />
+
+                            <View
+                                android:layout_width="1dip"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:background="@color/tw__medium_gray" />
+
+                            <RatingBar
+                                android:id="@+id/userrating"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:isIndicator="false"
+                                android:numStars="1" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+
+                        <com.tatx.userapp.customviews.CustomTextView
+                            android:id="@+id/tv_driver_name"
+                            style="@style/TextView12"
+                            android:textStyle="bold"
+                            />
+
+                        <com.tatx.userapp.customviews.CustomTextView
+                            android:id="@+id/tv_make_and_model"
+                            style="@style/TextView10"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:textAllCaps="true"
+                            android:singleLine="false"
+                            android:gravity="center_vertical"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/plate_no_background"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:gravity="bottom"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <!-- <com.tatx.userapp.customviews.CustomTextView
+                             style="@style/TextView12"
+                             android:layout_marginTop="@dimen/_3sdp"
+                             android:text="@string/plate_no"
+                             android:textColor="@color/black" />-->
+
+                        <com.tatx.userapp.customviews.CustomTextView
+                            android:id="@+id/tv_vehicle_number"
+                            style="@style/TextView10"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:padding="@dimen/_2sdp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/enroute_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/tw__medium_gray" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/contact"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/phone_call"
+                            android:gravity="center"
+                            android:padding="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_60sdp"
+                            android:paddingRight="@dimen/_60sdp"
+                            android:text="@string/contact" />
+
+                        <View
+                            android:layout_width="1dip"
+                            android:layout_height="fill_parent"
+                            android:background="@color/tw__medium_gray" />
+
+                        <Button
+                            android:id="@+id/farestimte"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/farestimate"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="1dip"
+                            android:layout_height="fill_parent"
+                            android:background="@color/tw__medium_gray" />
+
+                        <Button
+                            android:id="@+id/cancel_order"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/cancel"
+                            android:gravity="center"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/cancel" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/tw__medium_gray" />
+
+                    <Button
+                        android:id="@+id/btn_cash"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/divider"
+                        android:drawableLeft="@drawable/cash"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:text="@string/cash"
+
+                        />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            >
+<com.tatx.userapp.customviews.CustomTextView
+    android:id="@+id/slide_up_to_view"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/button_color"
+    android:text="@string/slide_up_to_view"
+    android:gravity="center"
+    android:textColor="@color/white"
+    />
+            <com.tatx.userapp.commonutills.CircularImageViewWithBoarder
+                android:id="@+id/driver_profile_pic"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/pic"
+                android:layout_marginLeft="@dimen/_10sdp"/>
+            <com.tatx.userapp.commonutills.CircularImageViewWithBoarder
+                android:id="@+id/car_pic"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="right"
+                android:src="@drawable/pic"
+                android:layout_marginRight="@dimen/_10sdp"
+                />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone">
+    </ListView>
+
+
+</LinearLayout>

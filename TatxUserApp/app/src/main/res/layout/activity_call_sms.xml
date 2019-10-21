@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <!-- <include layout="@layout/layout_title" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/transparent_50P">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_40sdp"
+            android:orientation="vertical"
+            android:background="@drawable/call_sms_background"
+            >
+
+            <LinearLayout
+                android:id="@+id/call_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:weightSum="1.3">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phone_call_1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                   />
+
+                <com.tatx.userapp.customviews.CustomTextView
+                    style="@style/TextView12"
+                    android:layout_width="0dp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/call_driver"
+                    android:layout_weight="1"
+                   />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/message_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:weightSum="1.4">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mail"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    />
+
+                <com.tatx.userapp.customviews.CustomTextView
+                    style="@style/TextView12"
+                    android:layout_width="0dp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/message_driver"
+                    android:layout_weight="1"
+                   />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

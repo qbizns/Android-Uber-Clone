@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/_4sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_map_image"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+
+                        android:layout_marginLeft="@dimen/_6sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/google_search_background"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_4sdp">
+
+                            <TextView
+                                android:id="@+id/tv_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left|center"
+                                android:paddingRight="@dimen/_6sdp"
+                                android:text="5"
+
+                                />
+
+                            <View
+                                android:layout_width="1dip"
+                                android:layout_height="fill_parent"
+                                android:background="@color/black" />
+
+                            <RatingBar
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_4sdp"
+                                android:layout_marginRight="@dimen/_4sdp"
+                                android:isIndicator="false"
+                                android:numStars="1" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_gravity="bottom|left"
+                            android:layout_marginLeft="@dimen/_6sdp"
+                            android:layout_marginRight="@dimen/_6sdp"
+                            android:src="@drawable/pic"
+                            android:visibility="gone" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <com.tatx.partnerapp.customviews.CustomTextView
+                                android:id="@+id/tv_trip_end_date_time"
+                                style="@style/TextView" />
+
+                            <com.tatx.partnerapp.customviews.CustomTextView
+                                android:id="@+id/tv_make_model"
+                                style="@style/TextView" />
+
+                        </LinearLayout>
+
+                        <com.tatx.partnerapp.customviews.CustomTextView
+                            android:id="@+id/tv_total_fare_cost_right_top"
+                            style="@style/TextView"
+                            android:gravity="right"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_100sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/google_search_background"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_4sdp"
+                        android:visibility="invisible">
+
+                        <com.tatx.partnerapp.customviews.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:paddingRight="@dimen/_7sdp"
+                            android:text="5.0"
+
+                            />
+
+                        <View
+                            android:layout_width="1dip"
+                            android:layout_height="fill_parent"
+                            android:background="@color/black" />
+
+                        <RatingBar
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:isIndicator="false"
+                            android:numStars="1" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_profile_pic"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginRight="@dimen/_7sdp"
+                        android:src="@drawable/pic" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <com.tatx.partnerapp.customviews.CustomTextView style="@style/TextView" />
+
+                        <com.tatx.partnerapp.customviews.CustomTextView style="@style/TextView" />
+
+                    </LinearLayout>
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:gravity="right"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:gravity="left"
+                        android:text="@string/trip_number" />
+
+
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_trip_id_right"
+                        style="@style/TextView"
+                        android:gravity="right"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/payment_method" />
+
+
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_payment_method_right"
+                        style="@style/TextView"
+                        android:gravity="right"
+                        android:text="@string/cash" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_8sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="@string/base_fare"
+
+                        />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.8"
+                        android:gravity="center" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_base_fare_right"
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="@string/distance"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_distance_value_middle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+
+                        />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_distance_cost_right"
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="@string/duration" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_duration_value_middle"
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.8"
+                        android:gravity="center" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_duration_cost_right"
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="@string/discount" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.8"
+                        android:gravity="center" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_discount"
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="@string/rounded_duration" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_rounded_duration_value_middle"
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+
+                        />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_rounded_duration_cost_right"
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="@string/sub_total" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.8"
+                        android:gravity="center" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_sub_total_cost_right"
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="@string/rounded_sub_total" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.8"
+                        android:gravity="center" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_rounded_sub_total_cost_right"
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="right"
+                        android:textColor="#e90410" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="@string/tip" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.8"
+                        android:gravity="center" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_tip_cost_right"
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="right" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:text="@string/total_fare"
+                        android:textStyle="bold" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.8" />
+
+                    <com.tatx.partnerapp.customviews.CustomTextView
+                        android:id="@+id/tv_total_fare_cost_right"
+                        style="@style/TextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="right"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.tatx.partnerapp.customviews.CustomRippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <com.tatx.partnerapp.customviews.CustomTextView
+                    android:id="@+id/tv_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/signup_button_bg"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_45sdp"
+                    android:paddingRight="@dimen/_45sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:text="@string/feedback"
+                    android:textColor="#fff" />
+            </com.tatx.partnerapp.customviews.CustomRippleView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

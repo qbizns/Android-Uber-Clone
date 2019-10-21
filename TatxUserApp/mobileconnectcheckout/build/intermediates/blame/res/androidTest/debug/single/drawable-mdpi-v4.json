@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\connect_checkout_shadow_bottom.9.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\connect_checkout_shadow_bottom.9.png"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\connect_checkout_background.xml",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\connect_checkout_background.xml"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\connect_checkout_shadow_bottom_layer.xml",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\connect_checkout_shadow_bottom_layer.xml"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\connect_checkout_shadow_top_layer.xml",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\connect_checkout_shadow_top_layer.xml"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\connect_checkout_shadow_icon_layer.xml",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\connect_checkout_shadow_icon_layer.xml"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\connect_checkout_shadow_top.9.png",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\connect_checkout_shadow_top.9.png"
+    },
+    {
+        "merged": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\connect_checkout_close.xml",
+        "source": "E:\\Repo2\\TATX-Android\\TatxUserApp\\mobileconnectcheckout\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\connect_checkout_close.xml"
+    }
+]

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+<Button
+    android:id="@+id/crop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/crop"
+    android:background="@drawable/decline_button_bg"
+    android:textColor="@color/white"/>
+
+    <com.theartofdev.edmodo.cropper.CropImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_reason"
+        android:textSize="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_16sdp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/_16sdp"
+        android:text="@string/reason_for_cancel"
+        />
+
+    <!--android:background="@color/statusbarcolor"-->
+
+
+
+</LinearLayout>

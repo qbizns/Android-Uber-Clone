@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:paddingBottom="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <com.tatx.userapp.customviews.CustomTextView
+                style="@style/TextView12"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="@string/shareurcode"
+                android:textColor="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/code_bg" />
+
+                <com.tatx.userapp.customviews.CustomTextView
+                    android:id="@+id/shareurcode"
+                    style="@style/TextView12"
+                    android:layout_gravity="center"
+                    android:textColor="@color/button_color"
+                    android:textSize="@dimen/_18sdp"
+                    android:textAllCaps="true"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+
+            <com.tatx.userapp.customviews.CustomTextView
+                android:id="@+id/share_amount"
+                style="@style/TextView12"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:textColor="@color/white"
+                android:singleLine="false"
+                android:visibility="gone"
+                />
+
+            <com.tatx.userapp.customviews.CustomRippleView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_55sdp"
+                >
+
+                <com.tatx.userapp.customviews.CustomButton
+                    android:id="@+id/copy"
+                    style="@style/AppThemeButton"
+                    android:layout_below="@id/checkbox"
+                    android:layout_gravity="center"
+                    android:text="@string/copy"
+                    />
+
+            </com.tatx.userapp.customviews.CustomRippleView>
+
+            <com.tatx.userapp.customviews.CustomRippleView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                >
+
+                <com.tatx.userapp.customviews.CustomButton
+                    android:id="@+id/share"
+                    style="@style/AppThemeButton"
+                    android:layout_below="@id/checkbox"
+                    android:layout_gravity="center"
+                    android:text="@string/share"
+                    />
+
+            </com.tatx.userapp.customviews.CustomRippleView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+   >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <com.tatx.partnerapp.customviews.CustomRippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+            <Button
+                android:id="@+id/bcomdriver"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup_button_bg"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:scaleType="fitCenter"
+                android:text="@string/signupmain"
+                android:textColor="#fff"
+                android:textSize="@dimen/_15sdp"
+
+                />
+
+        </com.tatx.partnerapp.customviews.CustomRippleView>
+
+
+        <!-- style="@style/MaterialAnimations.Button"-->
+        <!--android:background="@drawable/ripple_effect"-->
+
+        <com.tatx.partnerapp.customviews.CustomRippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            ripple:rv_color="#000000"
+            >
+
+
+        <Button
+                android:id="@+id/sign"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signin_button_bg"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:scaleType="fitCenter"
+                android:text="@string/signin"
+                android:textColor="#ed174b"
+                android:textSize="@dimen/_15sdp"
+
+                />
+        </com.tatx.partnerapp.customviews.CustomRippleView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/white_background_5_radious">
+
+        <Spinner
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:id="@+id/spinner1"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2"
+            android:background="@drawable/lang_spinner_background"
+            android:gravity="center"
+            android:layout_marginRight="0.5dp"
+            android:dropDownVerticalOffset="@dimen/_25sdp"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            ripple:srcCompat="@drawable/language_icon"
+
+            android:id="@+id/imageView2"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/_3sdp"/>
+    </RelativeLayout>
+</RelativeLayout>
+

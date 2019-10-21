@@ -1,0 +1,282 @@
+<resources>
+    <string name="app_name">تاتكس</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <!--285484011792937-->
+    <string name="save">حفظ</string>
+    <string name="saving_image">Saving image</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+    <string name="fare_details">تفاصيل الأجرة</string>
+    <string name="basefare">التعرفة الأساسية</string>
+    <string name="maxsize">تتسع لـ 4 أشخاص كحد أقصى</string>
+    <string name="per_km"> كم</string>
+    <string name="per_min"> دقيقة </string>
+    <string name="min_fare">الحد الأدنى للأجرة </string>
+    <!-- Registration Text  -->
+    <string name="registration">التسجيل</string>
+    <string name="signupvth">التسجيل عبر</string>
+    <string name="signup">التسجيل</string>
+    <string name="firstname">الاسم الأول</string>
+    <string name="lastname">الاسم الأخير</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="countrycode">+91  </string>
+    <string name="ph">رقم الجوال</string>
+    <string name="pwd">كلمة المرور</string>
+    <string name="terms">شروط</string>
+    <!-- Signup Signin Text  -->
+    <string name="signupmain">التسجيل </string>
+    <string name="signin">تسجيل الدخول</string>
+    <!-- Login Text  -->
+    <string name="login">البريد الإلكتروني</string>
+    <string name="emaillogin">Mobile number or Email-ID </string>
+    <string name="pwdlogin">كلمة المرور</string>
+    <string name="signinlogin">تسجيل الدخول</string>
+    <string name="frpwd">نسيت كلمة المرور؟</string>
+    <!-- ForgotPassword Text  -->
+    <string name="emailph">ال بريد الإلكتروني أو رقم الجوال</string>
+    <string name="submit">إرسال</string>
+    <string name="hint_language">اللغة</string>
+    <!-- AboutActivity Text  -->
+    <string name="about">عن تاتكس</string>
+    <string name="visit">زورونا على ...</string>
+    <string name="version">معلومات نسخة التطبيق</string>
+    <string name="termsc">الشروط والأحكام</string>
+    <string name="rate">قيّمنا في متجر قوقل</string>
+    <!-- Account Text  -->
+    <string name="accounts">الحساب</string>
+    <string name="sar">ر.س (ريال سعودي)</string>
+    <!-- Newl Text  -->
+    <!-- capture_image Text  -->
+    <!-- country_code Text  -->
+    <string name="cancel">إلغاء</string>
+    <!-- Display_Profile_Activity Text  -->
+    <string name="offers">العروض</string>
+    <string name="edit">تعديل</string>
+    <string name="edit_pro">اتعديل لملف الشخصي</string>
+    <string name="cash">نقداً</string>
+    <string name="order">أطلب</string>
+    <!-- Feedback Text  -->
+    <string name="feedback">تعليقاتك</string>
+    <string name="feedbackform">نموذج الملاحظات</string>
+    <string name="tatx_contact_info">للتواصل مع تاتكس</string>
+    <string name="email_info">Email : help@tatx.com,Phone: +966920006168</string>
+    <string name="p.p.box">P.O.Box 85958,Riyadh 11612,K.S.A</string>
+    <!-- HelpActivity Text  -->
+    <string name="help">مساعدة</string>
+    <string name="tatx_for_help">تاتكس للمساعدة</string>
+    <!-- Locations Text  -->
+    <string name="locations">الوجهات المفضلة</string>
+    <string name="addlocation">أضافة وجهة</string>
+    <!-- Loyalti Points Text  -->
+    <string name="loyalti_points">نقاط العضوية</string>
+    <string name="tatx_id"> عضوية تاتكس أو رقم المحمول</string>
+    <string name="redeem_points">استبدل نقاطك</string>
+    <string name="your_points"> نقاطك</string>
+    <string name="clas">الفئة</string>
+    <string name="points">النقاط</string>
+    <!-- Loyalti Points Text  -->
+    <!-- Select payments Text  -->
+    <string name="select_payments">اختيار طريقة الدفع</string>
+    <string name="add_creditcard">إضافة بطاقة ائتمانية</string>
+    <!-- Shareandarn Text  -->
+    <string name="shareearn">شارك واربح</string>
+    <string name="shareurcode">شارك رمزك</string>
+    <!-- Shareandarn Text  -->
+    <string name="verify">رمز التأكيد</string>
+    <string name="tripdetails">تفاصيل الرحلة</string>
+    <string name="trip_history">أرشيف الرحلات</string>
+    <string name="creditbaltr">عمليات الرصيد</string>
+    <string name="billno">Bill No :41152252</string>
+    <string name="creditbaldate">Date :17/05/2016</string>
+    <string name="trno">5588552</string>
+    <string name="sarno">24.30</string>
+    <string name="rtdriver">قيّم السائق</string>
+    <string name="invoice">الفاتورة</string>
+    <string name="farestimate">تقدير تقريبي للأجرة</string>
+    <string name="share">مشاركة</string>
+    <string name="nofnfdat">لا يوجد بيانات</string>
+    <string name="requesting">جاري نقلك </string>
+
+    <string name="credit_card">بطاقة ائتمان</string>
+    <string name="my_balance">الرصيد المتوفر</string>
+    <string name="confi_order">تأكيد الطلب</string>
+
+
+    <string name="resend_code">إعادة إرسال الرمز</string>
+    <string name="verify1">تأكيد</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="account">الحساب</string>
+    <string name="notifications">التنبيهات</string>
+    <string name="share_n_earn">شارك واربح</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="login_with">تسجيل الدخول عبر</string>
+    <string name="payment_type">طريقة الدفع</string>
+    <string name="add_credit_balance">اضافة رصيد</string>
+    <string name="enter_amount_to_add">ر.س الرجاء ادخال مبلغ للإضافة </string>
+    <string name="buy">اشتر</string>
+    <string name="card_holder_name">اسم حامل البطاقة</string>
+    <string name="credit_card_number">رقم البطاقة الائتمانية</string>
+    <string name="saved_locations">الوجهات المفضلة</string>
+    <string name="recent_locations">الوجهات الأخيرة</string>
+    <string name="choose_a_starting_point">اختيار نقطة الانطلاق ...</string>
+    <string name="redeem_loyalty">العضوية استبدل</string>
+    <string name="enter_points_to_redeem">أدخل نقاط لتخليص</string>
+    <string name="redeem">استبدل</string>
+    <string name="email_or_phone_number">ال بريد الإلكتروني أو رقم الجوال</string>
+    <string name="enter_amount_to_credit">المبلغ</string>
+    <string name="transfer">تحويل</string>
+    <string name="enter_location_name">أدخل اسم الموقع</string>
+    <string name="credits">الاعتمادات</string>
+    <string name="select_payment_type">اختر نوع الدفع</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="distance">المسافة</string>
+    <string name="duration">المدة</string>
+    <string name="base_fare">التعرفة الأساسية</string>
+    <string name="distance_fare">أجرة المسافة</string>
+    <string name="duration_fare">أجرة الوقت</string>
+    <string name="sub_total">المجموع</string>
+    <string name="tip_proper">رحلة</string>
+    <string name="round_down">تقريب الكسر للأدنى</string>
+    <string name="total_fare">التكلفة الإجمالية</string>
+    <string name="payment_method">طريقة الدفع</string>
+    <string name="please_enter_veryfication">يرجى إدخال رمز التأكيد الذي تم إرساله للهاتف الجوال المسجل لدينا</string>
+    <string name="sorry_for_delay">نأسف للتأخير</string>
+    <string name="internet_error">يرجى التأكد من اتصالك بالخدمة والمحاولة مجددا غير متصل بالإنترنت.</string>
+    <string name="copy">نسخ</string>
+    <string name="people"> أشخاص</string>
+    <string name="view_profile">استعرض ملفك</string>
+    <string name="emerency_contact">التواصل أثناء الطوارئ</string>
+    <string name="type_your_emergency_name">اكتب الاسم</string>
+    <string name="type_your_emergency_number">اكتب الرقم</string>
+    <string name="tatx_balance">رصيدك في تاتِكس</string>
+    <string name="learn_more">اعرف المزيد</string>
+    <string name="add_location">أضافة وجهة</string>
+    <string name="en_route">بالطريق إليك</string>
+    <string name="on_trip">جاري نقلك </string>
+    <string name="forgot_password">نسيت كلمة المرور؟</string>
+    <string name="adjustment">المبالغ السابقة</string>
+    <string name="rounded_down">تقريب السعر للأدنى</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="total_amount">المبلغ الإجمالي</string>
+    <string name="current_amount">الرحلة الحالية</string>
+    <string name="previous_amount">المبالغ السابقة</string>
+    <string name="call_driver">الاتصال بالسائق</string>
+    <string name="message_driver">ارسل رسالة للسائق</string>
+    <string name="are_sure_you">هل أنت متأكد من إلغاء الرحلة؟</string>
+    <string name="referral_code">رمز الدعوة</string>
+    <string name="contact">تواصل</string>
+    <string name="transfer_balance_to_tatx_customer">حوّل رصيد إلى عميل <تاتكس></تاتكس></string>
+    <string name="please_enter_your_concern"> اكتب تعليقك هنا</string>
+    <string name="are_you_sure_you_want_to_logout"> تسجيل الخروج؟</string>
+    <string name="yes">نعم</string>
+    <string name="no"> لا</string>
+    <string name="promo_code_already_used">تم استخدام رمز العرض مسبقاً</string>
+    <string name="promo_code_validated_successfully">تمت اضافة الرمز الترويجي لرحلتك القادمة بنجاح</string>
+    <string name="add_promo">استخدم رمز العرض</string>
+    <string name="please_enter_promo_code">يرجى إدخال رمز العرض</string>
+    <string name="invalid_promo_code">رمز العرض غير صحيح</string>
+    <!--<string name="use_promo_code">استخدم رمز العرض</string>-->
+    <string name="add_promo_code">إضافة رمز ترويجي</string>
+    <string name="slide_up_to_view"> اسحب باتجاه الأعلى للخيارات</string>
+    <string name="choose_destination">اختر وجهة</string>
+    <string name="why_did_you_cancel">لماذا قمت بإلغاء الطلب؟</string>
+    <string name="please_enter_all_fields">يرجى تعبئة جميع الحقول</string>
+    <string name="invalid_credit_card_number">رقم البطاقة غير صحيح</string>
+    <string name="invalid_month">تأكد من الشهر</string>
+    <string name="invalid_year">تأكد من السنة</string>
+    <string name="invalid_cvv">تأكد من رقم CVV</string>
+    <string name="please_enter_card_holder_name">الاسم كما هو مكتوب بالبطاقة</string>
+    <string name="scan">فحص البطاقة</string>
+    <string name="go_to_pin">موقع الدبّوس</string>
+    <string name="no_cards_were_added">لايوجد بطاقة ائتمانية محفوظة</string>
+
+    <string name="error_contacting_the_gateway">تعثر الاتصال بالخادم</string>
+    <string name="invalid_card_details">بيانات البطاقة غير صحيحة</string>
+    <string name="please_enter_amount">يرجى إدخال المبلغ</string>
+    <string name="no_card_was_added_please_add_card_and_try_again">لا يوجد بطاقة ائتمانية مضافة، يرجى الاضافة</string>
+    <string name="no_primary_card_available_please">لا يوجد بطاقة ائتمانية رئيسية، يرجى تعيين بطاقة رئيسية</string>
+    <string name="please_wait">يرجى الانتظار</string>
+    <string name="please_choose_starting_point">يرجى اختيار مكان الإقلال</string>
+    <string name="please_choose_destination">يرجى اختيار الوجهة</string>
+    <string name="something_went_wrong_try_again">تعثر التنفيذ، يرجى المحاولة مجدداً</string>
+    <string name="cancellation_charges_may_apply_do_you_want_to_continue">قد يتم تطبيق رسوم الإلغاء. هل تود المتابعة؟</string>
+    <string name="please_enter_location_name">يرجى اختيار اسم الموقع</string>
+    <string name="sorry">عذراً</string>
+    <string name="you_are_on_trip">الرحلة بدأت</string>
+    <string name="trip_cancelled">الرحلة أٌلغيت</string>
+    <string name="you_request_is_under_process">طلبك قيد التنفيذ</string>
+    <string name="new_password">تأكيد كلمة</string>
+    <string name="confirm_new_password">تأكيد كلمة السر</string>
+    <string name="please_enter_new_password">يرجى اختيار كلمة مرور جديدة</string>
+    <string name="please_confirm_new_password">يرجى تأكيد كلمة المرور الجديدة</string>
+    <string name="mismatch_password">كلمة المرور غير مطابقة</string>
+    <string name="please_enter_minimum_5_character">يرجى إدخال ٥ خانات على الأقل</string>
+    <string name="please_enter_email_or_mobile_no">يرجى ادخال البريد الإلكتروني أو رقم المحمول</string>
+    <string name="no_result_for">لا يوجد نتائج</string>
+    <string name="please_enter_address">يرجى إدخال العنوان</string>
+    <string name="please_choose_source">يرجى اختيار مكان الإقلال</string>
+    <string name="invalid_destination">وجهة غير صحيحة</string>
+    <string name="the_destination_entered_is_outside_our_coverage_area">الوجهة خارج نطاق الخدمة</string>
+    <string name="No_cab_found_please_try_after_some_time">لا يوجد مركبات. يرجى المحاولة فيما بعد</string>
+    <string name="please_select_destination">يرجى اختيار الوجهة</string>
+    <string name="please_add_card_to_process_do_you_want_to_add_credit_card">يرجى اضافة بطاقة ائتمانية للمتابعة. هل ترغب في ذلك؟</string>
+    <string name="insufficient_tatx_balance">لا يوجد رصيد كافي في بطاقة الائتمان</string>
+    <string name="please_add_tatx_balance_to_process_do_you_want_to_add_tatx_balance">يرجى اضافة رصيد للمتابعة. هل ترغب في ذلك؟</string>
+    <string name="please_rate_first">فضلا قيّم أولاً</string>
+    <string name="please_enter_emailid">يرجى ادخال البريد الإلكتروني</string>
+    <string name="please_enter_password_minimum_6_digits">يرجى اختيار كلمة مرور لا تقل عن 6 خانات</string>
+    <string name="please_enter_points_to_redeem">يرجى إدخال عدد النقاط المطلوب استبدالها</string>
+    <string name="please_enter_first_name">يرجى إدخال الاسم الأول</string>
+    <string name="please_enter_last_name">يرجى أدخال اسم الأخير</string>
+    <string name="please_enter_mobile_number">يرجى ادخال رقم المحمول</string>
+    <string name="please_enter_valid_mobile_number">يرجى ادخال رقم محمول صحيح</string>
+    <string name="please_accept_terms_and_conditions">يرجى الموافقة على الشروط والأحكام</string>
+    <string name="email_id_and_phone_number_already_exists">البريد الإلكتروني و رقم المحمول قر تم استخدامهما من قبل</string>
+    <string name="email_id_already_exists">البريد الإلكتروني تم استخدامه من قبل</string>
+    <string name="phone_number_already_exists">رقم المحمول تم استخدامه من قبل</string>
+    <string name="invalid_referral_code">رمز الدعوة غير صحيح</string>
+    <string name="reg_id_creation_failed">تعثر التسجيل. يرجى المحاولة لاحقاً</string>
+    <string name="a_new_update_is_available">تحديث جديد متوفر الآن</string>
+    <string name="update">تحديث</string>
+    <string name="invalid_otp">رمز خاطئ</string>
+    <string name="please_enter_4_digit_otp">يرجى ادخال الرمز المكوّن من 4 أرقام</string>
+    <string name="please_enter_sender_details">يرجى إدخال تفاصيل المُرسل</string>
+    <string name="please_enter_amount_to_credit">يرجى إدخال المبلغ</string>
+    <string name="do_you_want_to_delete_this_card">هل ترغب في حذف البطاقة؟</string>
+    <string name="please_enter_minimum_5_characters">يرجى إدخال ٥ خانات على الأقل</string>
+    <string name="share_and_earn">شارك وأربح</string>
+    <string name="share_via">شارك عبر</string>
+    <string name="download_now_and_use_promo_code">حمل التطبيق الآن واستخدم رمز الدعوة</string>
+    <string name="_to_get">لتحصل</string>
+    <string name="rides_free">الرحلات المجانية</string>
+    <string name="or">أو</string>
+    <string name="reason_for_cancel">سبب الإلغاء</string>
+    <string name="please_give_rating">يرجى التقييم</string>
+    <string name="enter_your_reason">وضّح السبب</string>
+    <string name="my_reason_is_not_listed">الأسباب غير مدرجة</string>
+    <string name="do_you_want_to_exit">هل تريد الخروج؟</string>
+    <string name="discount">تخفيض</string>
+    <string name="your_credit_card_will_be_changed">سيتم الخصم من بطاقتك الاكترونية</string>
+    <string name="for_verification_purposes_and_will_be_automatically_refunded">للتحقق من صلاحية البطاقة وسيتم استرجاع المبلغ تلقائياً</string>
+    <string name="all_your_information_is_safe_and_secured">كل معلومات البطاقة محميّة ومؤمّنة</string>
+    <string name="request_when_you_are_ready">اطلب عندما تكون جاهزاً، سائقك سيكون في نقطة الإقلال</string>
+    <string name="location_name">اسم الموقع</string>
+    <string name="already_exist">موجود مسبقاً</string>
+    <string name="you_already_added_two_loc">You already added two location, So please delete or edit location</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="delete_location">حذف الموقع</string>
+    <string name="edit_location">تعديل الموقع</string>
+    <string name="apply">Apply</string>
+    <string name="driver_acknowledge_your_changed_destination_location">Driver acknowledge your changed destination location</string>
+    <string name="download_now">Download now</string>
+    <string name="add_photo">أضف صورة عرض</string>
+    <string name="i_accept_the_terms">أوافق على الشروط</string>
+    <string name="no_push_notifications_available">لا يوجد تنبيهات</string>
+    <string name="copied">تم النسخ</string>
+    <string name="as_of_now_this_feature_is_not_available">As of now this feature is not available</string>
+
+
+</resources>

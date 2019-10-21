@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_8sdp" >
+
+    <ImageView
+        android:id="@+id/image_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/txt_image_slider" />
+
+    <com.tatx.userapp.customviews.CustomRippleView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:layout_alignParentBottom="true">
+
+        <com.tatx.userapp.customviews.CustomButton
+            android:id="@+id/cb_use_promo_code"
+            style="@style/AppThemeButton"
+            android:layout_gravity="center"
+            android:text="@string/use_this_promo_code" />
+    </com.tatx.userapp.customviews.CustomRippleView>
+
+
+
+</RelativeLayout>

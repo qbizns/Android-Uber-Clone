@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "549017914253",
+    "project_id": "tatxuserapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549017914253:android:05bcb4ae3c54d6ff",
+        "android_client_info": {
+          "package_name": "com.tatx.userapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549017914253-tkaumin2uififjm7lhgume6f7tgneqas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1a71ohbXMM1gxE6ePM-v_kdo5CrUMWLY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-89851151-2"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

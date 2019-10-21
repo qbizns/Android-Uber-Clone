@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_parent"
+    android:layout_marginBottom="@dimen/_140sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/ll_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/iv_loader_gif"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/filled_black_circle" />
+
+            <ImageView
+                android:id="@+id/iv_filled_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_loader_gif"
+                android:layout_alignLeft="@id/iv_loader_gif"
+                android:layout_alignRight="@id/iv_loader_gif"
+                android:layout_alignTop="@id/iv_loader_gif"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/filled_black_circle"
+                 />
+
+            <ImageView
+                android:id="@+id/iv_tv_time_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_loader_gif"
+                android:layout_alignLeft="@id/iv_loader_gif"
+                android:layout_alignRight="@id/iv_loader_gif"
+                android:layout_alignTop="@id/iv_loader_gif"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/filled_whte_circle_with_red_border" />
+
+            <LinearLayout
+                android:id="@+id/ll_time_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_tv_time_bg"
+                android:layout_alignLeft="@id/iv_tv_time_bg"
+                android:layout_alignRight="@id/iv_tv_time_bg"
+                android:layout_alignTop="@id/iv_tv_time_bg"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_8sdp"
+                     />
+                <!--
+                android:text="2"-->
+
+                <TextView
+                    android:id="@+id/tv_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_minus2sdp"
+                    android:gravity="center"
+                    android:text="@string/min"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_6sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_loader_flash"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/filled_loader_flash"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_marker_bottom_line"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_minus8sdp"
+            android:background="@color/button_color" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

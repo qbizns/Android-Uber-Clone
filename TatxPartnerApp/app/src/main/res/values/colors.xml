@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ed174b</color>
+    <color name="colorPrimaryDark">#8e1333</color>
+
+
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="primary">#00BCD4</color>
+    <color name="primary_dark">#00aff0</color>
+    <color name="primary_light">#B2EBF2</color>
+    <color name="accent">#607D8B</color>
+    <color name="secondary_text">#727272</color>
+    <color name="divider">#B6B6B6</color>#F5DEB3
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_purple">#cb88ff</color>
+    <color name="dark_yellow">#f8ca2c</color>
+    <color name="green">#8BC34A</color>
+    <color name="pickup">#2196F3</color>
+    <color name="edit_text_boarder">#dadada</color>
+    <color name="edit_text_solid">#f0f0f0</color>
+    <color name="statusbarcolor">#b30000</color>
+    <color name="button_color">#ff0057</color>
+
+
+    <!-- //yousuf
+    -->
+
+    <color name="buttonColor">#ff0057</color>
+    <color name="headerColor">#ff0057</color>
+    <color name="menuItemColor">#313131</color>
+
+    <!-- //yousuf end
+    -->
+
+    <color name="transparent_50P">#80000000</color>
+    <color name="transparent_80P">#CC000000</color>
+    <color name="transparent_75P">#BF000000</color>
+
+    <!-- Screens background color-->
+
+    <!-- dots inactive colors -->
+
+    <!-- dots active colors -->
+    <color name="edit_text_disabled_bg_color">#dadada</color>
+    <color name="button_color_navigate">#2888fe</color>
+    <color name="button_color_contact">#121341</color>
+
+</resources>

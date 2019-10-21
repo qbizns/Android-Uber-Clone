@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLinearLayout"
+    >
+
+    <include layout="@layout/layout_title" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+
+        <ImageView
+            android:id="@+id/iv_card_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/creditcard"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_card_details_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:orientation="vertical"
+            android:background="@android:color/transparent">
+
+
+
+
+            <com.tatx.userapp.customviews.CustomEditText
+                android:id="@+id/connect_checkout_insert_cc_payment_data_name"
+                style="@style/EditText"
+                android:hint="@string/card_holder_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="50"
+
+                android:nextFocusDown="@+id/et_credit_card_number"
+                android:textColorHint="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_credit_card_number"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                >
+            <com.tatx.userapp.customviews.CustomEditText
+                android:id="@+id/et_credit_card_number"
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_below="@id/connect_checkout_insert_cc_payment_data_name"
+                android:hint="@string/credit_card_number"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned"
+                android:maxLength="19"
+                android:nextFocusDown="@+id/connect_checkout_insert_cc_payment_data_expiry"
+                android:textColorHint="@color/divider" />
+
+                <LinearLayout
+                    android:id="@+id/ll_scan_credit_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/photo_camera"
+                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scan"
+                        style="@style/TextView10"
+                        android:textSize="@dimen/_8sdp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/connect_checkout_insert_cc_payment_data_textwrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_below="@id/ll_credit_card_number">
+
+                <com.tatx.userapp.customviews.CustomEditText
+                    android:id="@+id/connect_checkout_insert_cc_payment_data_expiry_month"
+                    style="@style/EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:hint="@string/connect_checkout_layout_hint_cc_expiry_month"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned"
+                    android:maxLength="2"
+                    android:nextFocusDown="@+id/connect_checkout_insert_cc_payment_data_expiry_year"
+                    android:textColorHint="@color/divider" />
+
+                <com.tatx.userapp.customviews.CustomEditText
+                    android:id="@+id/connect_checkout_insert_cc_payment_data_expiry_year"
+                    style="@style/EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/connect_checkout_insert_cc_payment_data_expiry_month"
+                    android:gravity="center"
+                    android:hint="@string/connect_checkout_layout_hint_cc_expiry_year"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned"
+                    android:maxLength="4"
+                    android:nextFocusDown="@+id/connect_checkout_insert_cc_payment_data_cvv"
+                    android:textColorHint="@color/divider" />
+
+                <com.tatx.userapp.customviews.CustomEditText
+                    android:id="@+id/connect_checkout_insert_cc_payment_data_cvv"
+                    style="@style/EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="0dp"
+                    android:gravity="center"
+                    android:hint="@string/connect_checkout_layout_hint_cc_cvv"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberSigned"
+                    android:maxLength="4"
+                    android:textColorHint="@color/divider" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.tatx.userapp.customviews.CustomRippleView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp">
+
+
+            <com.tatx.userapp.customviews.CustomButton
+                android:id="@+id/save_card"
+                style="@style/AppThemeButton"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClick"
+                android:text="@string/save" />
+        </com.tatx.userapp.customviews.CustomRippleView>
+
+
+<com.tatx.userapp.customviews.CustomTextView
+    android:id="@+id/your_credit_card_will_be_changed"
+   style="@style/TextView"
+    android:layout_width="match_parent"
+    android:text="@string/your_credit_card_will_be_changed"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:textAllCaps="false"
+    android:singleLine="false"
+    />
+
+    </LinearLayout>
+
+</ScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/_20sdp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_5sdp"
+            >
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/locked"
+          />
+        <com.tatx.userapp.customviews.CustomTextView
+            style="@style/TextView"
+            android:layout_width="match_parent"
+            android:text="@string/all_your_information_is_safe_and_secured"
+            android:textAllCaps="false"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

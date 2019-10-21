@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<include layout="@layout/layout_title"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_15sdp">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <com.tatx.partnerapp.customviews.CustomTextView
+            style="@style/TextView12"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/feedbackform"
+            />
+
+        <com.tatx.partnerapp.customviews.CustomEditText
+            android:id="@+id/feedbackform"
+            style="@style/AppThemeEditText"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/feedback_form_background"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:gravity="start"
+            />
+        <com.tatx.partnerapp.customviews.CustomRippleView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+           >
+        <com.tatx.partnerapp.customviews.CustomButton
+            android:id="@+id/submit"
+            style="@style/AppThemeButton"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            />
+        </com.tatx.partnerapp.customviews.CustomRippleView>
+        <com.tatx.partnerapp.customviews.CustomTextView
+            android:id="@+id/contactinfo"
+            style="@style/TextView"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/tatx_contact_info" />
+
+        <com.tatx.partnerapp.customviews.CustomTextView
+            android:id="@+id/emailinfo"
+            style="@style/TextView"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/email_info"
+            android:singleLine="false"/>
+
+        <com.tatx.partnerapp.customviews.CustomTextView
+            android:id="@+id/postboxinfo"
+            style="@style/TextView"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/p.p.box"
+            android:singleLine="false"/>
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
